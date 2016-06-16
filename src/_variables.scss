@@ -1,0 +1,250 @@
+﻿$twr-main-body-bg:              #2D2D30;
+$twr-input-bg:                  #333337;
+$twr-content-bg:                #252526;
+$twr-dark-content-bg:           #1E1E1E;
+
+
+$twr-border-color:              #434346;
+$twr-component-border-color:    #3F3F46;
+
+$brand-primary:                 #007ACC;
+$brand-success:                 #5cb85c;
+$brand-info:                    #56b1cc;
+$brand-warning:                 #d5702c;
+$brand-danger:                  #dc3b36;
+
+//== Bootstrap Variables ==
+//
+//#
+$gray-base:                 #F1F1F1;
+$gray-darker:               darken($gray-base, 13.5%) !default;
+$gray-dark:                 darken($gray-base, 20%) !default;
+$gray:                      darken($gray-base, 33.5%) !default;
+$gray-light:                darken($gray-base, 46.7%) !default;
+$gray-lighter:              darken($gray-base, 83.5%) !default;
+$body-bg:                   $twr-main-body-bg;
+$text-color:                $gray-base;
+$link-color:                lighten($brand-primary, 5);
+$link-hover-color:          lighten($brand-primary, 10);
+$font-family-sans-serif:    'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+//== Components
+$padding-base-vertical:     4px !default;
+$padding-base-horizontal:   10px !default;
+
+$padding-large-vertical:    8px !default;
+$padding-large-horizontal:  16px !default;
+
+$padding-small-vertical:    2px !default;
+$padding-small-horizontal:  8px !default;
+
+$padding-xs-vertical:       0.5px !default;
+$padding-xs-horizontal:     4px !default;
+
+$line-height-large:         1.3333333 !default; // extra decimals for Win 8.1 Chrome
+$line-height-small:         1.5 !default;
+
+$border-radius-base:        0;
+$border-radius-large:       0;
+$border-radius-small:       0;
+//#
+
+//== Buttons
+$btn-default-color:         $text-color;
+$btn-default-bg:            transparent;
+$btn-default-border:        $twr-border-color;
+//#
+
+//== Forms
+$input-bg:                  $twr-input-bg;
+$input-bg-disabled:         $twr-main-body-bg;
+$input-color:               $text-color;
+$input-border:              $twr-border-color;
+
+$input-border-focus:        $brand-primary;
+$input-color-placeholder:   #666;
+
+$form-group-margin-bottom:  10px;
+
+$legend-color:              $text-color;
+
+$input-group-addon-bg:      $twr-input-bg;
+
+$page-header-border-color:  $gray-light;
+//#
+
+//== Dropdowns
+$dropdown-bg:               darken($body-bg, 5);
+
+$dropdown-link-color:       $text-color;
+$dropdown-link-hover-color: $text-color;
+
+$dropdown-divider-bg:       lighten($body-bg, 10);
+
+$dropdown-link-hover-bg:    lighten($body-bg, 5);
+//#
+
+//== Nav
+$navbar-default-color:          $text-color;
+$navbar-default-bg:             $twr-content-bg;
+$navbar-default-border:         darken($navbar-default-bg, 5);
+// Navbar links
+$navbar-default-link-color:                lighten($gray-light, 15%);
+$navbar-default-link-hover-color:           #fff !default;
+$navbar-default-link-hover-bg:              lighten($navbar-default-bg, 5);
+$navbar-default-link-active-color:          $navbar-default-link-hover-color;
+$navbar-default-link-active-bg:             darken($navbar-default-bg, 5%);
+$navbar-default-link-disabled-color:        #444 !default;
+$navbar-default-link-disabled-bg:           transparent !default;
+
+// Navbar brand label
+$navbar-default-brand-color:                $navbar-default-link-color;
+$navbar-default-brand-hover-color:          #fff;
+$navbar-default-brand-hover-bg:             transparent !default;
+
+// Navbar toggle
+$navbar-default-toggle-hover-bg:            #333;
+$navbar-default-toggle-icon-bar-bg:         #fff;
+$navbar-default-toggle-border-color:        #333;
+
+// Inverted
+$navbar-inverse-color:                      #777 !default;
+$navbar-inverse-bg:                         #f8f8f8 !default;
+$navbar-inverse-border:                     darken($navbar-inverse-bg, 6.5%);
+// Inverted navbar links
+$navbar-inverse-link-color:                 #777 !default;
+$navbar-inverse-link-hover-color:           #333 !default;
+$navbar-inverse-link-hover-bg:              darken($navbar-inverse-bg, 5);
+$navbar-inverse-link-active-color:          #555 !default;
+$navbar-inverse-link-active-bg:             darken($navbar-inverse-bg, 10);
+$navbar-inverse-link-disabled-color:        #ccc !default;
+$navbar-inverse-link-disabled-bg:           transparent !default;
+
+// Inverted navbar brand label
+$navbar-inverse-brand-color:                $navbar-inverse-link-color;
+$navbar-inverse-brand-hover-color:          darken($navbar-inverse-brand-color, 10%);
+$navbar-inverse-brand-hover-bg:             transparent !default;
+
+// Inverted navbar toggle
+$navbar-inverse-toggle-hover-bg:            #ddd !default;
+$navbar-inverse-toggle-icon-bar-bg:         #888 !default;
+$navbar-inverse-toggle-border-color:        #ddd !default;
+//#
+
+//== Tables
+$table-bg-accent:               lighten($body-bg, 2);
+$table-bg-hover:                lighten($body-bg, 8);
+$table-bg-active:               lighten($body-bg, 5);
+
+$table-border-color:            #555 !default;
+//#
+
+//== Popovers
+$popover-bg:        lighten($body-bg, 10);
+//#
+
+//== List Group
+$list-group-bg:                 $twr-dark-content-bg;
+$list-group-border:             lighten($twr-dark-content-bg, 5);
+
+$list-group-hover-bg:           lighten($twr-dark-content-bg, 5);
+$list-group-active-color:       $text-color;
+$list-group-active-bg:          $brand-primary;
+$list-group-active-border:      lighten($twr-dark-content-bg, 5);
+
+$list-group-link-color:         $text-color;
+$list-group-link-hover-color:   $list-group-link-color !default;
+$list-group-link-heading-color: $text-color;
+//#
+
+//== Panels
+$panel-bg:                      $twr-content-bg;
+
+$panel-inner-border:            $twr-component-border-color;
+
+$panel-default-text:            $text-color;
+$panel-default-border:          $twr-component-border-color;
+
+$panel-default-heading-bg:      $twr-main-body-bg;
+$panel-footer-bg:               $panel-default-heading-bg;
+//#
+
+//== Progress
+$progress-bg:                   $twr-dark-content-bg;
+//#
+
+//== Tabs
+$nav-tabs-border-color:                         lighten($body-bg, 20);
+$nav-link-hover-bg:                             darken($body-bg, 5);
+$nav-tabs-link-hover-border-color:              transparent;
+$nav-tabs-active-link-hover-border-color:       $nav-tabs-border-color;
+$nav-tabs-justified-link-border-color:          $nav-tabs-border-color;
+$nav-tabs-justified-active-link-border-color:   $nav-tabs-border-color;
+//#
+
+//== Pagination
+$pagination-color:              $text-color;
+$pagination-bg:                 $btn-default-bg;
+$pagination-border:             $btn-default-border;
+
+$pagination-hover-color:        $brand-primary;
+$pagination-hover-bg:           lighten($pagination-bg, 20);
+$pagination-hover-border:       $pagination-border;
+
+$pagination-active-color:       #fff !default;
+$pagination-active-bg:          $brand-primary !default;
+$pagination-active-border:      $brand-primary !default;
+
+$pagination-disabled-bg:        $btn-default-bg;
+$pagination-disabled-border:    $btn-default-border;
+//#
+
+//== Pager
+$pager-border-radius:           0;
+$pager-active-color:            $text-color;
+//#
+
+//== Breadcrumbs
+$breadcrumb-bg:                 lighten($body-bg, 5);
+$breadcrumb-color:              $text-color;
+$breadcrumb-active-color:       darken($text-color, 10);
+//#
+
+//== Modal
+
+$modal-content-bg:              $body-bg;
+$modal-header-border-color:     lighten($body-bg, 10);
+
+//--- Close
+$close-color:                   #ebebeb;
+$close-text-shadow:             0 1px 0 #666;
+//#
+
+//== Code
+$code-color:                    $text-color;
+$code-bg:                       $twr-dark-content-bg;
+
+$kbd-color:                     $text-color;
+$kbd-bg:                        $twr-dark-content-bg;
+
+$pre-bg:                        $twr-dark-content-bg;
+$pre-color:                     $text-color;
+$pre-border-color:              $twr-component-border-color;
+
+$well-bg:                       $twr-content-bg;
+$well-border:                   $pre-border-color;
+//#
+
+//== Form States and Alerts
+$state-success-text:            $brand-success;
+$state-success-bg:              $brand-success;
+
+$state-info-text:               $brand-info;
+$state-info-bg:                 $brand-info;
+
+$state-warning-text:            $brand-warning;
+$state-warning-bg:              $brand-warning;
+
+$state-danger-text:             $brand-danger;
+$state-danger-bg:               $brand-danger;
+//#

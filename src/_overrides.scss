@@ -1,0 +1,265 @@
+﻿/// <reference path="_variables.scss" />
+
+//== Buttons
+.btn {
+    -moz-transition: background 0.1s ease-in-out, border-color 0.1s ease-in-out;
+    -o-transition: background 0.1s ease-in-out, border-color 0.1s ease-in-out;
+    -webkit-transition: background 0.1s ease-in-out, border-color 0.1s ease-in-out;
+    transition: background 0.1s ease-in-out, border-color 0.1s ease-in-out;
+}
+
+.btn-default:hover {
+    background:#3E3E40;
+    border: 1px solid lighten($btn-default-border, 5);
+}
+//#
+
+//== Buttons with dropdown menus
+.btn-primary ~ .dropdown-menu {
+    background:$brand-primary;      
+
+    li > a:hover, li > a:focus {
+        background: darken($brand-primary, 10);
+    }
+}
+
+.btn-success ~ .dropdown-menu {
+    background:$brand-success;
+
+    li > a:hover, li > a:focus {
+        background: darken($brand-success, 10);
+    }
+}
+.btn-info ~ .dropdown-menu {
+    background:$brand-info;
+
+    li > a:hover, li > a:focus {
+        background: darken($brand-info, 10);
+    }
+}
+.btn-warning ~ .dropdown-menu {
+    background:$brand-warning;
+
+    li > a:hover, li > a:focus {
+        background: darken($brand-warning, 10);
+    }
+}
+.btn-danger ~ .dropdown-menu {
+    background:$brand-danger;
+
+    li > a:hover, li > a:focus {
+        background: darken($brand-danger, 10);
+    }
+}
+//#
+
+//== Fieldset
+fieldset {
+    border:1px solid $btn-default-border;
+    padding:10px;
+
+    legend {
+        width:auto;
+        border: 0;
+        padding:0 5px;
+        margin-bottom:0;
+        font-size:1.2em;
+    }
+}
+//#
+
+//== Panels
+.panel-title, .alert {
+    color:$text-color;
+}
+//#
+
+//== ng-invalid
+.ng-invalid {
+    border-color: $brand-danger;
+    @include box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
+
+    &:focus {
+        border-color: darken($brand-danger, 10%);
+        $shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px lighten($brand-danger, 20%);
+        @include box-shadow($shadow);
+    }
+}
+
+//== Navs
+.nav > li.disabled > a:hover, .nav > li.disabled > a:focus {
+    border-color:transparent;
+}
+//#
+
+//== Inputs
+    //Select list button in IE
+::-ms-expand {
+    color:$text-color;
+}
+
+option {
+    &:checked {
+        background:$brand-primary;
+
+        &:hover {
+            background: lighten($brand-primary, 5);
+        }
+    }
+
+    &:hover{
+        color:$text-color;
+        background:lighten($body-bg, 10);
+    }
+
+    &:active {
+        background:$brand-primary;
+    }
+}
+
+input[type=checkbox] {
+    position:relative;
+    height:1em;
+    width:1em;
+
+    &:after {
+        position:absolute;
+        display:block;
+        content:'';
+        height:1em;
+        width:1em;
+        line-height: 0.9em;
+        font-weight:bold;
+        background: $input-bg;
+        border:1px solid $input-border;
+        cursor:pointer;
+    }
+
+    &:checked:after {
+        content:'\2714';
+    }
+
+    &::-ms-check {
+        background: $input-bg;
+        color: $text-color;
+        border:1px solid $input-border;
+    }
+}
+
+input[type=radio] {
+    position:relative;
+    height:1em;
+    width:1em;
+
+    &:after {
+        border:1px solid $input-border;
+        position:absolute;
+        content: '';
+        font-weight:bold;
+        background:$input-bg;
+        height:13px;
+        width:13px;
+        line-height:12px;
+        text-align:center;
+        cursor:pointer;
+        border-radius:50%;
+    }
+
+    &:checked:before {
+        position:absolute;
+        z-index: 9999;
+        background:$text-color;
+        content:'';
+        height:7px;
+        width:7px;
+        border-radius:50%;
+        top:3px;
+        left:3px;
+    }
+
+    &::-ms-check {
+        background: $input-bg;
+        color:$text-color;
+        border-color:$input-border;
+        padding-top:0.25px;
+    }
+}
+//#
+
+//== Tables
+table.table-outside-bordered {
+    border:1px solid $table-border-color;
+}
+//#
+
+//== Navbar
+.navbar-inverse .navbar-form {
+    input[type=text] {
+        color:#000;
+        background:$navbar-inverse-bg;
+        border-color:#ddd;
+    }
+    .btn {
+        color:#000;
+        border-color:#ddd;
+
+        &:hover {
+            background: darken($navbar-inverse-bg, 5);
+        }
+    }
+}
+
+.navbar.navbar-default, .navbar.navbar-inverse {
+    .navbar-toggle {
+        border-color:transparent;
+
+        &:focus, &:hover, &:active {
+            background:transparent;
+        }
+
+        .icon-bar {
+            &:nth-child(1), &:nth-child(3) {
+                -moz-transition: margin 0.4s ease-in-out, transform 0.4s ease-in-out;
+                -o-transition: margin 0.4s ease-in-out, transform 0.4s ease-in-out;
+                -webkit-transition: margin 0.4s ease-in-out, transform 0.4s ease-in-out;
+                transition: margin 0.4s ease-in-out, transform 0.4s ease-in-out;
+            }
+
+            &:nth-child(2) {
+                -moz-transition: opacity 0.4s ease-in-out;
+                -o-transition: opacity 0.4s ease-in-out;
+                -webkit-transition: opacity 0.4s ease-in-out;
+                transition: opacity 0.4s ease-in-out;
+            }
+        }
+
+        &.navbar-open {
+
+            .icon-bar {
+                &:nth-child(1) {
+                    margin-top: 5px;
+                    -moz-transform: rotate(225deg);
+                    -ms-transform: rotate(225deg);
+                    -o-transform: rotate(225deg);
+                    -webkit-transform: rotate(225deg);
+                    transform: rotate(225deg);
+                }
+
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+
+                &:nth-child(3) {
+                    margin-top: -8px;
+                    margin-bottom: 7px;
+                    -moz-transform: rotate(-225deg);
+                    -ms-transform: rotate(-225deg);
+                    -o-transform: rotate(-225deg);
+                    -webkit-transform: rotate(-225deg);
+                    transform: rotate(-225deg);
+                }
+            }
+        }
+    }
+}
+//#

@@ -1,0 +1,1047 @@
+﻿<!DOCTYPE html>
+<html data-ng-app="app">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        main {
+            margin-top:30px;
+        }
+    </style>
+    <link href="../dist/vsDark.min.css" rel="stylesheet" />
+</head>
+<body data-ng-controller="demoController as vm">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+             <div class="navbar-header">
+                 <button type="button" class="navbar-toggle collapsed" data-ng-click="isNavCollapsed = !isNavCollapsed"
+                         data-ng-class="{'navbar-open': isNavCollapsed}">
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                 </button>
+                 <a class="navbar-brand" href="">Visual Studio Inspired Bootstrap Theme</a>
+             </div>
+
+            <div class="collapse navbar-collapse" data-uib-collapse="!isNavCollapsed">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://github.com/StrutTower/VSdark-Bootstrap-Theme">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <data-uib-accordion data-close-others="true" class="bootstrap-css">
+
+            <div>
+                <div class="page-header">
+                    <h2>Navbar</h2>
+                </div>
+
+                <div class="navbar navbar-default">
+                    <div class="container-fluid">
+
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-ng-click="isCollapsed1 = !isCollapsed1"
+                                    data-ng-class="{'navbar-open': isCollapsed1}">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="">Brand Link</a>
+                        </div>
+
+                        <div class="collapse navbar-collapse" data-uib-collapse="!isCollapsed1">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="">Link</a></li>
+                                <li><a href="">Link</a></li>
+                                <li class="dropdown" data-uib-dropdown>
+                                    <a href="" data-uib-dropdown-toggle>Dropdown <span class="caret"></span></a>
+                                    <ul href="" class="dropdown-menu" data-uib-dropdown-menu>
+                                        <li><a href="">Link 1</a></li>
+                                        <li><a href="">Link 2</a></li>
+                                        <li><a href="">Link 3</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="">Link 4</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <form class="navbar-form navbar-left">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Search" />
+                                </div>
+                                <button type="submit" class="btn btn-default">Submit</button>
+                            </form>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="">Link</a></li>
+                                <li><a href="">Link</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navbar navbar-inverse">
+                    <div class="container-fluid">
+
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-ng-click="isCollapsed2 = !isCollapsed2"
+                                    data-ng-class="{'navbar-open': isCollapsed2}">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="">Brand Link</a>
+                        </div>
+
+                        <div class="collapse navbar-collapse" data-uib-collapse="!isCollapsed2">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="">Link</a></li>
+                                <li><a href="">Link</a></li>
+                                <li class="dropdown" data-uib-dropdown>
+                                    <a href="" data-uib-dropdown-toggle>Dropdown <span class="caret"></span></a>
+                                    <ul href="" class="dropdown-menu" data-uib-dropdown-menu>
+                                        <li><a href="">Link 1</a></li>
+                                        <li><a href="">Link 2</a></li>
+                                        <li><a href="">Link 3</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="">Link 4</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <form class="navbar-form navbar-left">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Search" />
+                                </div>
+                                <button type="submit" class="btn btn-default">Submit</button>
+                            </form>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="">Link</a></li>
+                                <li><a href="">Link</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="page-header">
+                    <h2>Buttons</h2>
+                </div>
+
+                <h4>Button Styles</h4>
+                <button class="btn btn-default">Default</button>
+                <button class="btn btn-primary">Primary</button>
+                <button class="btn btn-success">Success</button>
+                <button class="btn btn-info">Info</button>
+                <button class="btn btn-warning">Warning</button>
+                <button class="btn btn-danger">Danger</button>
+                <button class="btn btn-link">Link</button>
+
+                <h4>Disabled buttons</h4>
+                <button class="btn btn-default" disabled>Default</button>
+                <button class="btn btn-primary" disabled>Primary</button>
+                <button class="btn btn-success" disabled>Success</button>
+                <button class="btn btn-info" disabled>Info</button>
+                <button class="btn btn-warning" disabled>Warning</button>
+                <button class="btn btn-danger" disabled>Danger</button>
+                <button class="btn btn-link" disabled>Link</button>
+
+                <h4>Single Button Dropdown</h4>
+                <div data-uib-dropdown style="display:inline-block;">
+                    <button class="btn btn-default" data-uib-dropdown-toggle>Dropdown <span class="caret"></span></button>
+                    <ul class="dropdown-menu" data-uib-dropdown-menu>
+                        <li><a href="">Link</a></li>
+                        <li><a href="">Link</a></li>
+                    </ul>
+                </div>
+
+                <div data-uib-dropdown style="display:inline-block;">
+                    <button class="btn btn-primary" data-uib-dropdown-toggle>Dropdown <span class="caret"></span></button>
+                    <ul class="dropdown-menu" data-uib-dropdown-menu>
+                        <li><a href="">Link</a></li>
+                        <li><a href="">Link</a></li>
+                    </ul>
+                </div>
+
+                <div data-uib-dropdown style="display:inline-block;">
+                    <button class="btn btn-success" data-uib-dropdown-toggle>Dropdown <span class="caret"></span></button>
+                    <ul class="dropdown-menu" data-uib-dropdown-menu>
+                        <li><a href="">Link</a></li>
+                        <li><a href="">Link</a></li>
+                    </ul>
+                </div>
+
+                <div data-uib-dropdown style="display:inline-block;">
+                    <button class="btn btn-info" data-uib-dropdown-toggle>Dropdown <span class="caret"></span></button>
+                    <ul class="dropdown-menu" data-uib-dropdown-menu>
+                        <li><a href="">Link</a></li>
+                        <li><a href="">Link</a></li>
+                    </ul>
+                </div>
+
+                <div data-uib-dropdown style="display:inline-block;">
+                    <button class="btn btn-warning" data-uib-dropdown-toggle>Dropdown <span class="caret"></span></button>
+                    <ul class="dropdown-menu" data-uib-dropdown-menu>
+                        <li><a href="">Link</a></li>
+                        <li><a href="">Link</a></li>
+                    </ul>
+                </div>
+
+                <div data-uib-dropdown style="display:inline-block;">
+                    <button class="btn btn-danger" data-uib-dropdown-toggle>Dropdown <span class="caret"></span></button>
+                    <ul class="dropdown-menu" data-uib-dropdown-menu>
+                        <li><a href="">Link</a></li>
+                        <li><a href="">Link</a></li>
+                    </ul>
+                </div>
+
+                <h4>Split Button Dropdown</h4>
+                <div class="btn-group" data-uib-dropdown>
+                    <button class="btn btn-default">Default</button>
+                    <button data-uib-dropdown-toggle class="btn btn-default"><span class="caret"></span></button>
+                    <ul class="dropdown-menu" data-uib-dropdown-menu>
+                        <li><a href="">Link</a></li>
+                        <li><a href="">Link</a></li>
+                    </ul>
+                </div>
+
+                <div class="btn-group" data-uib-dropdown>
+                    <button class="btn btn-primary">Primary</button>
+                    <button data-uib-dropdown-toggle class="btn btn-primary"><span class="caret"></span></button>
+                    <ul class="dropdown-menu" data-uib-dropdown-menu>
+                        <li><a href="">Link</a></li>
+                        <li><a href="">Link</a></li>
+                    </ul>
+                </div>
+
+                <div class="btn-group" data-uib-dropdown>
+                    <button class="btn btn-success">Success</button>
+                    <button data-uib-dropdown-toggle class="btn btn-success"><span class="caret"></span></button>
+                    <ul class="dropdown-menu" data-uib-dropdown-menu>
+                        <li><a href="">Link</a></li>
+                        <li><a href="">Link</a></li>
+                    </ul>
+                </div>
+
+                <div class="btn-group" data-uib-dropdown>
+                    <button class="btn btn-info">Info</button>
+                    <button data-uib-dropdown-toggle class="btn btn-info"><span class="caret"></span></button>
+                    <ul class="dropdown-menu" data-uib-dropdown-menu>
+                        <li><a href="">Link</a></li>
+                        <li><a href="">Link</a></li>
+                    </ul>
+                </div>
+
+                <div class="btn-group" data-uib-dropdown>
+                    <button class="btn btn-warning">Warning</button>
+                    <button data-uib-dropdown-toggle class="btn btn-warning"><span class="caret"></span></button>
+                    <ul class="dropdown-menu" data-uib-dropdown-menu>
+                        <li><a href="">Link</a></li>
+                        <li><a href="">Link</a></li>
+                    </ul>
+                </div>
+
+                <div class="btn-group" data-uib-dropdown>
+                    <button class="btn btn-danger">Danger</button>
+                    <button data-uib-dropdown-toggle class="btn btn-danger"><span class="caret"></span></button>
+                    <ul class="dropdown-menu" data-uib-dropdown-menu>
+                        <li><a href="">Link</a></li>
+                        <li><a href="">Link</a></li>
+                    </ul>
+                </div>
+
+                <h4>Button Sizes</h4>
+                <a href="" class="btn btn-primary btn-lg">Large button</a>
+                <a href="" class="btn btn-primary">Default button</a>
+                <a href="" class="btn btn-primary btn-sm">Small button</a>
+                <a href="" class="btn btn-primary btn-xs">Mini button</a>
+
+                <h4>Links as buttons</h4>
+                <a href="" class="btn btn-default">Default</a>
+                <a href="" class="btn btn-primary">Primary</a>
+                <a href="" class="btn btn-success">Success</a>
+                <a href="" class="btn btn-info">Info</a>
+                <a href="" class="btn btn-warning">Warning</a>
+                <a href="" class="btn btn-danger">Danger</a>
+                <a href="" class="btn btn-link">Link</a>
+
+                <h4>Disabled Links as buttons</h4>
+                <a href="" class="btn btn-default" disabled>Default</a>
+                <a href="" class="btn btn-primary" disabled>Primary</a>
+                <a href="" class="btn btn-success" disabled>Success</a>
+                <a href="" class="btn btn-info" disabled>Info</a>
+                <a href="" class="btn btn-warning" disabled>Warning</a>
+                <a href="" class="btn btn-danger" disabled>Danger</a>
+                <a href="" class="btn btn-link" disabled>Link</a>
+            </div>
+
+            <div>
+                <div class="page-header">
+                    <h2>Typography</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="bs-component">
+                            <h1>Heading 1</h1>
+                            <h2>Heading 2</h2>
+                            <h3>Heading 3</h3>
+                            <h4>Heading 4</h4>
+                            <h5>Heading 5</h5>
+                            <h6>Heading 6</h6>
+                            <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                            <div id="source-button" class="btn btn-primary btn-xs" style="display: none;">&lt; &gt;</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="bs-component">
+                            <h2>Example body text</h2>
+                            <p>Nullam quis risus eget <a href="">urna mollis ornare</a> vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+                            <p><small>This line of text is meant to be treated as fine print.</small></p>
+                            <p>The following snippet of text is <strong>rendered as bold text</strong>.</p>
+                            <p>The following snippet of text is <em>rendered as italicized text</em>.</p>
+                            <p>An abbreviation of the word attribute is <abbr title="attribute">attr</abbr>.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="bs-component">
+                            <h2>Emphasis classes</h2>
+                            <p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+                            <p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
+                            <p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
+                            <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+                            <p class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="bs-component">
+                            <blockquote>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="bs-component">
+                            <blockquote class="blockquote-reverse">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <table class="table table-striped table-hover table-outside-bordered">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Column heading</th>
+                            <th>Column heading</th>
+                            <th>Column heading</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Odd Row Stripe</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Even Row Stripe</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Odd Row Stripe</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Even Row Stripe</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                        </tr>
+                        <tr class="success">
+                            <td>6</td>
+                            <td>Success Row</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                        </tr>
+                        <tr class="info">
+                            <td>5</td>
+                            <td>Info Row</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                        </tr>
+                        <tr class="warning">
+                            <td>8</td>
+                            <td>Warning Row</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                        </tr>
+                        <tr class="danger">
+                            <td>7</td>
+                            <td>Danger Row</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                        </tr>
+                        <tr class="active">
+                            <td>9</td>
+                            <td>Active Row</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div>
+                <div class="page-header">
+                    <h2>Forms</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="well bs-component">
+                            <h3 style="margin-top:0;">Form Example</h3>
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+                                    <div class="col-lg-10">
+                                        <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+                                    <div class="col-lg-10">
+                                        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> Checkbox
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="textArea" class="col-lg-2 control-label">Textarea</label>
+                                    <div class="col-lg-10">
+                                        <textarea class="form-control" rows="3" id="textArea"></textarea>
+                                        <span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-2 control-label">Radios</label>
+                                    <div class="col-lg-10">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                                                Option one is this
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                                Option two can be something else
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="select" class="col-lg-2 control-label">Selects</label>
+                                    <div class="col-lg-10">
+                                        <select class="form-control" id="select">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                        <br>
+                                        <select multiple="" class="form-control">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-lg-10 col-lg-offset-2">
+                                        <button type="reset" class="btn btn-default">Cancel</button>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div id="source-button" class="btn btn-primary btn-xs" style="display: none;">&lt; &gt;</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-lg-offset-1">
+
+                        <form class="bs-component">
+                            <div class="form-group">
+                                <label class="control-label">Focused input</label>
+                                <input class="form-control" type="text" value="This is focused...">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label">Disabled input</label>
+                                <input class="form-control" type="text" placeholder="Disabled input here..." disabled="">
+                            </div>
+
+                            <div class="form-group has-warning">
+                                <label class="control-label">Input warning</label>
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <div class="form-group has-error">
+                                <label class="control-label">Input error</label>
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label">Angular ng-invalid class</label>
+                                <input type="text" class="form-control ng-invalid">
+                            </div>
+
+                            <div class="form-group has-success">
+                                <label class="control-label">Input success</label>
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label">Large input</label>
+                                <input class="form-control input-lg" type="text">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label">Default input</label>
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label">Small input</label>
+                                <input class="form-control input-sm" type="text">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label">Input addons</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon">$</span>
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button">Button</button>
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="page-header">
+                    <h2>Navs</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h2 id="nav-tabs">Tabs</h2>
+
+                        <data-uib-tabset>
+                            <data-uib-tab data-heading="Home">
+                                <p>
+                                    Raw denim you probably haven't heard of them jean shorts Austin.
+                                    Nesciunt tofu stumptown aliqua, retro synth master cleanse.
+                                    Mustache cliche tempor, williamsburg carles vegan helvetica.
+                                    Reprehenderit butcher retro keffiyeh dreamcatcher synth.
+                                    Cosby sweater eu banh mi, qui irure terry richardson ex squid.
+                                    Aliquip placeat salvia cillum iphone.
+                                    Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+                                </p>
+                            </data-uib-tab>
+                            <data-uib-tab data-heading="Disabled" data-disable="true">
+                                <p>Disabled tab content</p>
+                            </data-uib-tab>
+                            <data-uib-tab>
+                                <data-uib-tab-heading data-uib-dropdown>
+                                    <div href="" data-uib-dropdown-toggle>
+                                        Dropdown <span class="caret"></span>
+                                    </div>
+                                    <ul class="dropdown-menu" data-uib-dropdown-menu>
+                                        <li><a href="">Link 1</a></li>
+                                        <li><a href="">Link 2</a></li>
+                                        <li><a href="">Link 3</a></li>
+                                    </ul>
+                                </data-uib-tab-heading>
+                            </data-uib-tab>
+                        </data-uib-tabset>
+                    </div>
+                    <div class="col-lg-4">
+                        <h2 id="nav-pills">Pills</h2>
+                        <div class="bs-component">
+                            <ul class="nav nav-pills">
+                                <li class="active"><a href="">Home</a></li>
+                                <li><a href="">Profile</a></li>
+                                <li class="disabled"><a href="">Disabled</a></li>
+                                <li data-uib-dropdown>
+                                    <a data-uib-dropdown-toggle href="">
+                                        Dropdown <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu" data-uib-dropdown-menu>
+                                        <li><a href="">Action</a></li>
+                                        <li><a href="">Another action</a></li>
+                                        <li><a href="">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="">Separated link</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <br>
+                        <div class="bs-component">
+                            <ul class="nav nav-pills nav-stacked">
+                                <li class="active"><a href="">Home</a></li>
+                                <li><a href="">Profile</a></li>
+                                <li class="disabled"><a href="">Disabled</a></li>
+                                <li data-uib-dropdown>
+                                    <a data-uib-dropdown-toggle href="">
+                                        Dropdown <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu" data-uib-dropdown-menu>
+                                        <li><a href="">Action</a></li>
+                                        <li><a href="">Another action</a></li>
+                                        <li><a href="">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="">Separated link</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <h2 id="nav-breadcrumbs">Breadcrumbs</h2>
+                        <div class="bs-component">
+                            <ul class="breadcrumb">
+                                <li class="active">Home</li>
+                            </ul>
+
+                            <ul class="breadcrumb">
+                                <li><a href="">Home</a></li>
+                                <li class="active">Library</li>
+                            </ul>
+
+                            <ul class="breadcrumb">
+                                <li><a href="">Home</a></li>
+                                <li><a href="">Library</a></li>
+                                <li class="active">Data</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-5">
+                        <h2 id="pagination">Pagination</h2>
+                        <div class="bs-component">
+                            <data-uib-pagination data-total-items="vm.pager.totalItems"
+                                                 data-ng-model="vm.pager.pageNumber"
+                                                 data-max-size="4"
+                                                 data-ng-disabled="vm.pager.disable"
+                                                 data-force-ellipses="true">
+                            </data-uib-pagination>
+                            <div></div>
+                            <data-uib-pagination data-total-items="vm.pager.totalItems"
+                                                 data-ng-model="vm.pager.pageNumber"
+                                                 class="pagination-lg"
+                                                 data-max-size="4"
+                                                 data-ng-disabled="vm.pager.disable"
+                                                 data-force-ellipses="true">
+                            </data-uib-pagination>
+                            <div></div>
+                            <data-uib-pagination data-total-items="vm.pager.totalItems"
+                                                 data-ng-model="vm.pager.pageNumber"
+                                                 class="pagination-sm"
+                                                 data-max-size="8"
+                                                 data-ng-disabled="vm.pager.disable"
+                                                 data-force-ellipses="true">
+                            </data-uib-pagination>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <h2 id="pager">Pager</h2>
+                        <div class="bs-component">
+                            <pre>You are on page {{vm.pager.pageNumber}}</pre>
+                            <data-uib-pager data-total-items="vm.pager.totalItems"
+                                            data-ng-model="vm.pager.pageNumber"
+                                            data-ng-disabled="vm.pager.disable"></data-uib-pager>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <button class="btn btn-default" data-ng-click="vm.pager.disable = !vm.pager.disable"
+                                data-ng-switch="vm.pager.disable">
+                            <span data-ng-switch-when="true">Enable Pager/Pagination</span>
+                            <span data-ng-switch-when="false">Disable Pager/Pagination</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="page-header">
+                    <h2>Indicators</h2>
+                </div>
+
+                <h3>Alerts</h3>
+                <div>
+                    <uib-alert type="warning">
+                        <h4>Warning!</h4>
+                        <p>
+                            Best check yo self, you're not looking too good. Nulla vitae elit libero, a pharetra augue.
+                            Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+                        </p>
+                    </uib-alert>
+                    <uib-alert type="danger">Oh snap! Change a few things up and try submitting again.</uib-alert>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h3>Labels</h3>
+                        <span class="label label-default">Default</span>
+                        <span class="label label-primary">Primary</span>
+                        <span class="label label-success">Success</span>
+                        <span class="label label-warning">Warning</span>
+                        <span class="label label-danger">Danger</span>
+                        <span class="label label-info">Info</span>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <h3>Badges</h3>
+
+                        <data-uib-tabset data-type="pills">
+                            <data-uib-tab>
+                                <data-uib-tab-heading>
+                                    Home <span class="badge">42</span>
+                                </data-uib-tab-heading>
+                            </data-uib-tab>
+                            <data-uib-tab data-heading="Profile">
+                            </data-uib-tab>
+                            <data-uib-tab>
+                                <data-uib-tab-heading>
+                                    Messages <span class="badge">3</span>
+                                </data-uib-tab-heading>
+                            </data-uib-tab>
+                        </data-uib-tabset>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="page-header">
+                    <h2>Progress Bars</h2>
+                </div>
+
+                <h4>Basic</h4>
+                <data-uib-progressbar value="55"></data-uib-progressbar>
+
+                <h4>Styles</h4>
+                <data-uib-progressbar value="30" data-type="danger"></data-uib-progressbar>
+                <data-uib-progressbar value="40" data-type="warning"></data-uib-progressbar>
+                <data-uib-progressbar value="50" data-type="info"></data-uib-progressbar>
+                <data-uib-progressbar value="60" data-type="success"></data-uib-progressbar>
+
+                <h4>Striped</h4>
+                <data-uib-progressbar value="55" class="progress-striped"></data-uib-progressbar>
+                <data-uib-progressbar value="60" class="progress-striped" data-type="success"></data-uib-progressbar>
+
+                <h4>Striped Animation</h4>
+                <data-uib-progressbar value="80" class="progress-striped active"></data-uib-progressbar>
+                <data-uib-progressbar value="80" class="progress-striped active" data-type="info"></data-uib-progressbar>
+            </div>
+
+            <div>
+                <div class="page-header">
+                    <h2>Containers</h2>
+                </div>
+
+                <div class="jumbotron">
+                    <h1>Jumbotron</h1>
+                    <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                    <p><a class="btn btn-primary btn-lg">Learn more</a></p>
+                </div>
+
+                <h3>List Groups</h3>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h4>Basic List Group</h4>
+
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <span class="badge">14</span>
+                                Cras justo odio
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge">2</span>
+                                Dapibus ac facilisis in
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge">1</span>
+                                Morbi leo risus
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <h4>Selectable List Group</h4>
+                        <div class="list-group">
+                            <a href="" class="list-group-item active">
+                                Cras justo odio
+                            </a>
+                            <a href="" class="list-group-item">
+                                Dapibus ac facilisis in
+                            </a>
+                            <a href="" class="list-group-item">
+                                Morbi leo risus
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <h4>List Group with Heading</h4>
+                        <div class="list-group">
+                            <a href="" class="list-group-item">
+                                <h4 class="list-group-item-heading">List group item heading</h4>
+                                <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                            </a>
+                            <a href="" class="list-group-item">
+                                <h4 class="list-group-item-heading">List group item heading</h4>
+                                <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Panels</h3>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="bs-component">
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    Basic panel
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading">Panel heading</div>
+                                <div class="panel-body">
+                                    Panel content
+                                    <br />
+                                    More content
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    Panel content
+                                    <br />
+                                    More content
+                                </div>
+                                <div class="panel-footer">Panel footer</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="bs-component">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Panel primary</h3>
+                                </div>
+                                <div class="panel-body">
+                                    Panel content
+                                </div>
+                            </div>
+
+                            <div class="panel panel-success">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Panel success</h3>
+                                </div>
+                                <div class="panel-body">
+                                    Panel content
+                                    <br />
+                                    More content
+                                </div>
+                                <div class="panel-footer">Panel footer</div>
+                            </div>
+
+                            <div class="panel panel-warning">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Panel warning</h3>
+                                </div>
+                                <div class="panel-body">
+                                    Panel content
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="bs-component">
+                            <div class="panel panel-danger">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Panel danger</h3>
+                                </div>
+                                <div class="panel-body">
+                                    Panel content
+                                </div>
+                            </div>
+
+                            <div class="panel panel-info">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Panel info</h3>
+                                </div>
+                                <div class="panel-body">
+                                    Panel content
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Wells</h3>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="bs-component">
+                            <div class="well">
+                                Look, I'm in a well!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="bs-component">
+                            <div class="well well-sm">
+                                Look, I'm in a small well!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="bs-component">
+                            <div class="well well-lg">
+                                Look, I'm in a large well!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="page-header">
+                    <h2>Dialogs</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h4>Modal</h4>
+                        <button class="btn btn-default" data-ng-click="vm.openModal('')">Open Modal</button>
+                        <button class="btn btn-default" data-ng-click="vm.openModal('lg')">Open Large Modal</button>
+                        <button class="btn btn-default" data-ng-click="vm.openModal('sm')">Open Small Modal</button>
+                    </div>
+                    <div class="col-sm-6">
+                        <h4>Popovers</h4>
+                        <button type="button" class="btn btn-default"
+                                data-uib-popover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+                                data-popover-placement="left">
+                            Left
+                        </button>
+                        <button type="button" class="btn btn-default"
+                                data-uib-popover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+                                data-popover-placement="bottom">
+                            Bottom
+                        </button>
+                        <button type="button" class="btn btn-default"
+                                data-uib-popover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+                                data-popover-title="Title"
+                                data-popover-placement="top">
+                            Top
+                        </button>
+
+                        <h4>Tooltips</h4>
+                        <button type="button" class="btn btn-default"
+                                data-uib-tooltip="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+                                data-tooltip-placement="left">
+                            Left
+                        </button>
+                        <button type="button" class="btn btn-default"
+                                data-uib-tooltip="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+                                data-tooltip-placement="bottom">
+                            Bottom
+                        </button>
+                        <button type="button" class="btn btn-default"
+                                data-uib-tooltip="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+                                data-tooltip-placement="top">
+                            Top
+                        </button>
+                        <button type="button" class="btn btn-default"
+                                data-uib-tooltip="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+                                data-tooltip-placement="right">
+                            right
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="page-header">
+                    <h2>Code Elements</h2>
+                </div>
+
+                <h4>Inline Code</h4>
+                <p>
+                    For example, <code>&lt;section&gt;</code> should be wrapped as inline.
+                </p>
+
+                <h4>User Input</h4>
+                <p>
+                    To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
+                    To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
+                </p>
+
+                <h4>pre</h4>
+                <pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
+
+                <h4>Variables</h4>
+                <var>y</var> = <var>m</var><var>x</var> + <var>b</var>
+
+                <h4>Sample Output</h4>
+                <samp>This text is meant to be treated as sample output from a computer program.</samp>
+            </div>
+        </data-uib-accordion>
+    </main>
+
+    <script type="text/ng-template" id="modal-template">
+        <div class="modal-header">
+            <button class="close" data-ng-click="$close()">&times;</button>
+            <h3 class="modal-title">I'm a modal!</h3>
+        </div>
+        <div class="modal-body">
+            Body Content
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" type="button" data-ng-click="vm.ok($close)">OK</button>
+            <button class="btn btn-default" type="button" data-ng-click="vm.cancel($close)">Cancel</button>
+        </div>
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-animate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.3.3/ui-bootstrap-tpls.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

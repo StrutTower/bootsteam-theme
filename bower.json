@@ -1,0 +1,7 @@
+{
+  "name": "vs-bootstrap-theme",
+  "private": true,
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.6"
+  }
+}
