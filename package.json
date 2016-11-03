@@ -1,8 +1,9 @@
 {
 	"version": "1.0.0",
-	"name": "vs-bootstrap-theme",
-	"private": true,
+	"name": "bootsteam-theme",
+  "private": true,
   "devDependencies": {
+    "bootstrap-sass": "^3.3.7",
     "gulp": "^3.9.1",
     "gulp-sass": "^2.3.1",
     "gulp-concat": "^2.6.0",

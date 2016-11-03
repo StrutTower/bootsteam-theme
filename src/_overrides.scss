@@ -1,5 +1,9 @@
 ﻿/// <reference path="_variables.scss" />
 
+.jumbotron {
+    background:$twr-content-bg;
+}
+
 //== Buttons
 .btn {
     -moz-transition: background 0.1s ease-in-out, border-color 0.1s ease-in-out;
@@ -11,6 +15,10 @@
 .btn-default:hover {
     background:#3E3E40;
     border: 1px solid lighten($btn-default-border, 5);
+}
+
+.btn-success {
+    /*background:linear-gradient( to bottom, $brand-success 5%, $brand-success-dark 95%);*/
 }
 //#
 
@@ -193,18 +201,61 @@ table.table-outside-bordered {
 //#
 
 //== Navbar
-.navbar-inverse .navbar-form {
-    input[type=text] {
-        color:#000;
-        background:$navbar-inverse-bg;
-        border-color:#ddd;
+.navbar.navbar-inverse {
+    .dropdown-menu {
+        background: $twr-navbar-inverse-background;
+        
+        .divider {
+            background-color: lighten($twr-navbar-inverse-background, 10);
+        }
     }
-    .btn {
-        color:#000;
-        border-color:#ddd;
 
-        &:hover {
-            background: darken($navbar-inverse-bg, 5);
+    .navbar-brand {
+        color: lighten($navbar-inverse-color, 10);
+    }
+
+    .navbar-form {
+        .form-control {
+            background: $twr-navbar-inverse-form-background;
+            border-color: #345D7D;
+        }
+        .btn {
+            border-color:#345D7D;
+        }
+
+        ::-webkit-input-placeholder { color: #305D8A; }
+        :-moz-placeholder { color: #305D8A; }
+        ::-moz-placeholder { color: #305D8A; }
+        :-ms-input-placeholder { color: #305D8A; }
+    }
+}
+
+.navbar.navbar-default {
+    .dropdown-menu {
+        background:$twr-navbar-default-background;
+
+        .divider {
+            background-color: lighten($twr-navbar-default-background, 10);
+        }
+    }
+
+    .navbar-brand {
+        color: lighten($navbar-default-color, 10);
+    }
+
+    .navbar-form {
+        input[type=text] {
+            color:#000;
+            background:$navbar-default-bg;
+            border-color:$twr-component-border-color;
+        }
+        .btn {
+            color:$gray-base;
+            border-color:$twr-component-border-color;
+
+            &:hover {
+                background: darken($navbar-inverse-bg, 5);
+            }
         }
     }
 }

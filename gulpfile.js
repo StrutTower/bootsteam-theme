@@ -8,7 +8,7 @@ var gulp = require('gulp'),
 
 var options = {
     sass: {
-        src: ['src/vsDark.scss', 'src/vsDarkwithWebfont.scss'],
+        src: ['src/bootsteam.scss', 'src/bootsteamWithWebfont.scss'],
         files: 'src/**/*.scss',
         dest: 'dist'
     }

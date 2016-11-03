@@ -1,22 +1,33 @@
-﻿$twr-main-body-bg:              #2D2D30;
-$twr-input-bg:                  #333337;
-$twr-content-bg:                #252526;
-$twr-dark-content-bg:           #1E1E1E;
+﻿$twr-main-body-bg:              #1b2838;
+$twr-input-bg:                  #2A3F5A;
+$twr-content-bg:                #171a21;
+$twr-dark-content-bg:           #16202D;
 
+$twr-border-radius: 2px;
+
+$twr-navbar-default-background: #171a21;
+$navbar-default-color: #c6d4df;
+$navbar-default-border: $twr-navbar-default-background;
+
+$twr-navbar-inverse-background: #3C6C96;
+$twr-navbar-inverse-form-background: #5196C5;
+
+$navbar-inverse-color: #67c1f5;
+$navbar-inverse-link-color: $navbar-inverse-color;
+$navbar-inverse-border: $twr-navbar-inverse-background;
+$navbar-inverse-toggle-icon-bar-bg: white;
 
 $twr-border-color:              #434346;
 $twr-component-border-color:    #3F3F46;
 
-$brand-primary:                 #007ACC;
-$brand-success:                 #5cb85c;
-$brand-info:                    #56b1cc;
+$brand-primary:                 #417a9b;
+$brand-success:                 darken(#a4d007, 10); 
+$brand-info:                    darken(#56b1cc, 5);
 $brand-warning:                 #d5702c;
 $brand-danger:                  #dc3b36;
 
-//== Bootstrap Variables ==
-//
-//#
-$gray-base:                 #F1F1F1;
+//== Bootstrap Variables
+$gray-base:                 #c6d4df;
 $gray-darker:               darken($gray-base, 13.5%) !default;
 $gray-dark:                 darken($gray-base, 20%) !default;
 $gray:                      darken($gray-base, 33.5%) !default;
@@ -29,8 +40,8 @@ $link-hover-color:          lighten($brand-primary, 10);
 $font-family-sans-serif:    'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 //== Components
-$padding-base-vertical:     4px !default;
-$padding-base-horizontal:   10px !default;
+$padding-base-vertical:     6px !default;
+$padding-base-horizontal:   12px !default;
 
 $padding-large-vertical:    8px !default;
 $padding-large-horizontal:  16px !default;
@@ -44,9 +55,9 @@ $padding-xs-horizontal:     4px !default;
 $line-height-large:         1.3333333 !default; // extra decimals for Win 8.1 Chrome
 $line-height-small:         1.5 !default;
 
-$border-radius-base:        0;
-$border-radius-large:       0;
-$border-radius-small:       0;
+$border-radius-base:        $twr-border-radius;
+$border-radius-large:       $twr-border-radius;
+$border-radius-small:       $twr-border-radius;
 //#
 
 //== Buttons
@@ -62,7 +73,7 @@ $input-color:               $text-color;
 $input-border:              $twr-border-color;
 
 $input-border-focus:        $brand-primary;
-$input-color-placeholder:   #666;
+$input-color-placeholder:   #999;
 
 $form-group-margin-bottom:  10px;
 
@@ -85,11 +96,11 @@ $dropdown-link-hover-bg:    lighten($body-bg, 5);
 //#
 
 //== Nav
-$navbar-default-color:          $text-color;
-$navbar-default-bg:             $twr-content-bg;
-$navbar-default-border:         darken($navbar-default-bg, 5);
+//$navbar-default-color:          $twr-navbar-color;  //
+$navbar-default-bg:             $twr-navbar-default-background;
+//$navbar-default-border:         $twr-navbar-color !default;//darken($navbar-default-bg, 5);
 // Navbar links
-$navbar-default-link-color:                lighten($gray-light, 15%);
+$navbar-default-link-color:                 #ccc !default;//lighten($gray-light, 15%);
 $navbar-default-link-hover-color:           #fff !default;
 $navbar-default-link-hover-bg:              lighten($navbar-default-bg, 5);
 $navbar-default-link-active-color:          $navbar-default-link-hover-color;
@@ -108,15 +119,15 @@ $navbar-default-toggle-icon-bar-bg:         #fff;
 $navbar-default-toggle-border-color:        #333;
 
 // Inverted
-$navbar-inverse-color:                      #777 !default;
-$navbar-inverse-bg:                         #f8f8f8 !default;
-$navbar-inverse-border:                     darken($navbar-inverse-bg, 6.5%);
+$navbar-inverse-color:                      red !default;
+$navbar-inverse-bg:                         $twr-navbar-inverse-background !default;
+$navbar-inverse-border:                     darken($navbar-inverse-bg, 6.5%) !default;
 // Inverted navbar links
 $navbar-inverse-link-color:                 #777 !default;
-$navbar-inverse-link-hover-color:           #333 !default;
-$navbar-inverse-link-hover-bg:              darken($navbar-inverse-bg, 5);
-$navbar-inverse-link-active-color:          #555 !default;
-$navbar-inverse-link-active-bg:             darken($navbar-inverse-bg, 10);
+$navbar-inverse-link-hover-color:           #ccc !default;
+$navbar-inverse-link-hover-bg:              lighten($navbar-inverse-bg, 5) !default;
+$navbar-inverse-link-active-color:          #ccc !default;
+$navbar-inverse-link-active-bg:             lighten($navbar-inverse-bg, 5) !default;
 $navbar-inverse-link-disabled-color:        #ccc !default;
 $navbar-inverse-link-disabled-bg:           transparent !default;
 
@@ -165,7 +176,7 @@ $panel-inner-border:            $twr-component-border-color;
 $panel-default-text:            $text-color;
 $panel-default-border:          $twr-component-border-color;
 
-$panel-default-heading-bg:      $twr-main-body-bg;
+$panel-default-heading-bg:      lighten($twr-dark-content-bg, 5);
 $panel-footer-bg:               $panel-default-heading-bg;
 //#
 
