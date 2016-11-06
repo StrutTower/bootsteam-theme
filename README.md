@@ -2,4 +2,4 @@
 
 Bootstrap theme inspired by Steam's store theme
 
-[Live Demo](http://htmlpreview.github.io/?https://github.com/StrutTower/bootsteam-theme/blob/master/demo/index.html)
+[Live Demo](https://cdn.rawgit.com/StrutTower/bootsteam-theme/1.0.2/demo/index.html)

@@ -5025,26 +5025,36 @@ button.close {
 
 .btn-primary ~ .dropdown-menu {
   background: #417a9b; }
+  .btn-primary ~ .dropdown-menu li > a {
+    color: white; }
   .btn-primary ~ .dropdown-menu li > a:hover, .btn-primary ~ .dropdown-menu li > a:focus {
     background: #325e77; }
 
 .btn-success ~ .dropdown-menu {
   background: #7d9f05; }
+  .btn-success ~ .dropdown-menu li > a {
+    color: white; }
   .btn-success ~ .dropdown-menu li > a:hover, .btn-success ~ .dropdown-menu li > a:focus {
     background: #566d04; }
 
 .btn-info ~ .dropdown-menu {
   background: #42a8c6; }
+  .btn-info ~ .dropdown-menu li > a {
+    color: white; }
   .btn-info ~ .dropdown-menu li > a:hover, .btn-info ~ .dropdown-menu li > a:focus {
     background: #318aa4; }
 
 .btn-warning ~ .dropdown-menu {
   background: #d5702c; }
+  .btn-warning ~ .dropdown-menu li > a {
+    color: white; }
   .btn-warning ~ .dropdown-menu li > a:hover, .btn-warning ~ .dropdown-menu li > a:focus {
     background: #ac5a22; }
 
 .btn-danger ~ .dropdown-menu {
   background: #dc3b36; }
+  .btn-danger ~ .dropdown-menu li > a {
+    color: white; }
   .btn-danger ~ .dropdown-menu li > a:hover, .btn-danger ~ .dropdown-menu li > a:focus {
     background: #be2621; }
 
