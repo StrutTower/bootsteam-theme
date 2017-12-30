@@ -32,3 +32,4 @@ node_modules
 *.sln
 .vs/*
 Web.config
+/package-lock.json
