@@ -1,326 +1,194 @@
-﻿/// <reference path="_variables.scss" />
+﻿///<reference path="variables.scss" />
+///<reference path="../node_modules/bootstrap/scss/bootstrap.scss" />
 
-.jumbotron {
-    background:$twr-content-bg;
-}
+// Alerts
 
-//== Buttons
-.btn {
-    -moz-transition: background 0.1s ease-in-out, border-color 0.1s ease-in-out;
-    -o-transition: background 0.1s ease-in-out, border-color 0.1s ease-in-out;
-    -webkit-transition: background 0.1s ease-in-out, border-color 0.1s ease-in-out;
-    transition: background 0.1s ease-in-out, border-color 0.1s ease-in-out;
-}
+.alert {
+    color: white;
 
-.btn-default:hover {
-    background:#3E3E40;
-    border: 1px solid lighten($btn-default-border, 5);
-}
+    &.alert-primary {
+        background: $primary;
+        border-color: darken($primary, 5);
+    }
 
-.btn-success {
-    /*background:linear-gradient( to bottom, $brand-success 5%, $brand-success-dark 95%);*/
-}
-//#
+    &.alert-secondary {
+        background: $secondary;
+        border-color: darken($secondary, 5);
+    }
 
-//== Buttons with dropdown menus
-.btn-primary ~ .dropdown-menu {
-    background:$brand-primary;      
-    
-    li > a { color:white;}
+    &.alert-success {
+        background: $success;
+        border-color: darken($success, 5);
+    }
 
-    li > a:hover, li > a:focus {
-        background: darken($brand-primary, 10);
+    &.alert-info {
+        background: $info;
+        border-color: darken($info, 5);
+    }
+
+    &.alert-warning {
+        background: $warning;
+        border-color: darken($warning, 5);
+    }
+
+    &.alert-danger {
+        background: $danger;
+        border-color: darken($danger, 5);
+    }
+
+    &.alert-light {
+        color: #555;
+        background: $light;
+        border-color: darken($light, 5);
+    }
+
+    &.alert-dark {
+        background: $dark;
+        border-color: darken($dark, 5);
     }
 }
 
-.btn-success ~ .dropdown-menu {
-    background:$brand-success;
-    
-    li > a { color:white;}
-
-    li > a:hover, li > a:focus {
-        background: darken($brand-success, 10);
-    }
-}
-.btn-info ~ .dropdown-menu {
-    background:$brand-info;
-    
-    li > a { color:white;}
-
-    li > a:hover, li > a:focus {
-        background: darken($brand-info, 10);
-    }
-}
-.btn-warning ~ .dropdown-menu {
-    background:$brand-warning;
-    
-    li > a { color:white;}
-
-    li > a:hover, li > a:focus {
-        background: darken($brand-warning, 10);
-    }
-}
-.btn-danger ~ .dropdown-menu {
-    background:$brand-danger;
-
-    li > a { color:white;}
-
-    li > a:hover, li > a:focus {
-        background: darken($brand-danger, 10);
-    }
-}
-//#
-
-//== Fieldset
-fieldset {
-    border:1px solid $btn-default-border;
-    padding:10px;
-
-    legend {
-        width:auto;
-        border: 0;
-        padding:0 5px;
-        margin-bottom:0;
-        font-size:1.2em;
-    }
-}
-//#
-
-//== Panels
-.panel-title, .alert {
-    color:$text-color;
-}
-//#
-
-//== ng-invalid
-.ng-invalid {
-    border-color: $brand-danger;
-    @include box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
-
-    &:focus {
-        border-color: darken($brand-danger, 10%);
-        $shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px lighten($brand-danger, 20%);
-        @include box-shadow($shadow);
-    }
-}
-
-//== Navs
-.nav > li.disabled > a:hover, .nav > li.disabled > a:focus {
-    border-color:transparent;
-}
-//#
-
-//== Inputs
-    //Select list button in IE
-::-ms-expand {
-    color:$text-color;
-}
-
-option {
-    &:checked {
-        background:$brand-primary;
+.table {
+    .table-primary {
+        th, td {
+            background: $primary;
+        }
 
         &:hover {
-            background: lighten($brand-primary, 5);
+            th, td {
+                background: darken($primary, 10);
+            }
         }
     }
 
-    &:hover{
-        color:$text-color;
-        background:lighten($body-bg, 10);
-    }
+    .table-secondary {
+        th, td {
+            background: $secondary;
+        }
 
-    &:active {
-        background:$brand-primary;
-    }
-}
-
-input[type=checkbox] {
-    position:relative;
-    height:1em;
-    width:1em;
-
-    &:after {
-        position:absolute;
-        display:block;
-        content:'';
-        height:1em;
-        width:1em;
-        line-height: 0.9em;
-        font-weight:bold;
-        background: $input-bg;
-        border:1px solid $input-border;
-        cursor:pointer;
-    }
-
-    &:checked:after {
-        content:'\2714';
-    }
-
-    &::-ms-check {
-        background: $input-bg;
-        color: $text-color;
-        border:1px solid $input-border;
-    }
-}
-
-input[type=radio] {
-    position:relative;
-    height:1em;
-    width:1em;
-
-    &:after {
-        border:1px solid $input-border;
-        position:absolute;
-        content: '';
-        font-weight:bold;
-        background:$input-bg;
-        height:13px;
-        width:13px;
-        line-height:12px;
-        text-align:center;
-        cursor:pointer;
-        border-radius:50%;
-    }
-
-    &:checked:before {
-        position:absolute;
-        z-index: 9999;
-        background:$text-color;
-        content:'';
-        height:7px;
-        width:7px;
-        border-radius:50%;
-        top:3px;
-        left:3px;
-    }
-
-    &::-ms-check {
-        background: $input-bg;
-        color:$text-color;
-        border-color:$input-border;
-        padding-top:0.25px;
-    }
-}
-//#
-
-//== Tables
-table.table-outside-bordered {
-    border:1px solid $table-border-color;
-}
-//#
-
-//== Navbar
-.navbar.navbar-inverse {
-    .dropdown-menu {
-        background: $twr-navbar-inverse-background;
-        
-        .divider {
-            background-color: lighten($twr-navbar-inverse-background, 10);
+        &:hover {
+            th, td {
+                background: darken($secondary, 10);
+            }
         }
     }
 
-    .navbar-brand {
-        color: lighten($navbar-inverse-color, 10);
-    }
-
-    .navbar-form {
-        .form-control {
-            background: $twr-navbar-inverse-form-background;
-            border-color: #345D7D;
-        }
-        .btn {
-            border-color:#345D7D;
+    .table-success {
+        th, td {
+            background: $success;
         }
 
-        ::-webkit-input-placeholder { color: #305D8A; }
-        :-moz-placeholder { color: #305D8A; }
-        ::-moz-placeholder { color: #305D8A; }
-        :-ms-input-placeholder { color: #305D8A; }
-    }
-}
-
-.navbar.navbar-default {
-    .dropdown-menu {
-        background:$twr-navbar-default-background;
-
-        .divider {
-            background-color: lighten($twr-navbar-default-background, 10);
+        &:hover {
+            th, td {
+                background: darken($success, 10);
+            }
         }
     }
 
-    .navbar-brand {
-        color: lighten($navbar-default-color, 10);
+    .table-danger {
+        th, td {
+            background: $danger;
+        }
+
+        &:hover {
+            th, td {
+                background: darken($danger, 10);
+            }
+        }
     }
 
-    .navbar-form {
-        input[type=text] {
-            color:#000;
-            background:$navbar-default-bg;
-            border-color:$twr-component-border-color;
+    .table-warning {
+        th, td {
+            background: $warning;
         }
-        .btn {
-            color:$gray-base;
-            border-color:$twr-component-border-color;
 
-            &:hover {
-                background: darken($navbar-inverse-bg, 5);
+        &:hover {
+            th, td {
+                background: darken($warning, 10);
+            }
+        }
+    }
+
+    .table-info {
+        th, td {
+            background: $info;
+        }
+
+        &:hover {
+            th, td {
+                background: darken($info, 10);
+            }
+        }
+    }
+
+    .table-light {
+        th, td {
+            color: $gray-800;
+            background: $light;
+        }
+
+        &:hover {
+            th, td {
+                background: darken($light, 10);
+            }
+        }
+    }
+
+    .table-dark {
+        th, td {
+            background: $dark;
+        }
+
+        &:hover {
+            th, td {
+                background: darken($dark, 10);
             }
         }
     }
 }
 
-.navbar.navbar-default, .navbar.navbar-inverse {
-    .navbar-toggle {
-        border-color:transparent;
+.form-control-plaintext {
+    color: $body-color !important;
+}
 
-        &:focus, &:hover, &:active {
-            background:transparent;
-        }
+.navbar.bg-primary .form-control {
+    background: darken($primary, 15);
+}
+.navbar.bg-info .form-control {
+    background: darken($info, 15);
+}
+.navbar.bg-warning .form-control {
+    background: darken($warning, 15);
+}
+.navbar.bg-danger .form-control {
+    background: darken($danger, 15);
+}
+.navbar.bg-light .form-control {
+    color: $gray-900;
+    background: darken($light, 15);
+    border-color: darken($light, 25);
 
-        .icon-bar {
-            &:nth-child(1), &:nth-child(3) {
-                -moz-transition: margin 0.4s ease-in-out, transform 0.4s ease-in-out;
-                -o-transition: margin 0.4s ease-in-out, transform 0.4s ease-in-out;
-                -webkit-transition: margin 0.4s ease-in-out, transform 0.4s ease-in-out;
-                transition: margin 0.4s ease-in-out, transform 0.4s ease-in-out;
-            }
-
-            &:nth-child(2) {
-                -moz-transition: opacity 0.4s ease-in-out;
-                -o-transition: opacity 0.4s ease-in-out;
-                -webkit-transition: opacity 0.4s ease-in-out;
-                transition: opacity 0.4s ease-in-out;
-            }
-        }
-
-        &.navbar-open {
-
-            .icon-bar {
-                &:nth-child(1) {
-                    margin-top: 5px;
-                    -moz-transform: rotate(225deg);
-                    -ms-transform: rotate(225deg);
-                    -o-transform: rotate(225deg);
-                    -webkit-transform: rotate(225deg);
-                    transform: rotate(225deg);
-                }
-
-                &:nth-child(2) {
-                    opacity: 0;
-                }
-
-                &:nth-child(3) {
-                    margin-top: -8px;
-                    margin-bottom: 7px;
-                    -moz-transform: rotate(-225deg);
-                    -ms-transform: rotate(-225deg);
-                    -o-transform: rotate(-225deg);
-                    -webkit-transform: rotate(-225deg);
-                    transform: rotate(-225deg);
-                }
-            }
-        }
+    &:focus {
+        border-color: darken($light, 35);
     }
 }
-//#
+.navbar.bg-dark .form-control {
+    background: darken($dark, 5);
+}
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    color: $body-color;
+}
+
+.carousel-indicators li {
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.bg-light {
+    color: $gray-800;
+}
+
+hr {
+    border-top-color: $twr-border-color;
+}

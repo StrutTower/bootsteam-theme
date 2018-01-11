@@ -1,5 +1,4 @@
 ﻿/// <binding ProjectOpened='sass-watch' />
-
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     cssMin = require('gulp-cssmin');
@@ -8,7 +7,7 @@ var gulp = require('gulp'),
 
 var options = {
     sass: {
-        src: ['src/bootsteam.scss', 'src/bootsteamWithWebfont.scss'],
+        src: ['src/bootsteam.scss'],
         files: 'src/**/*.scss',
         dest: 'dist'
     }

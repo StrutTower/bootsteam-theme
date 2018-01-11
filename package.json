@@ -1,9 +1,9 @@
 {
-  "version": "1.0.3",
+  "version": "4.0.0",
   "name": "bootsteam-theme",
   "private": true,
   "devDependencies": {
-    "bootstrap-sass": "~3.3.7",
+    "bootstrap": "4.0.0-beta.3",
     "gulp": "~3.9.1",
     "gulp-sass": "~3.1.0",
     "gulp-concat": "~2.6.1",

@@ -1,5 +1,5 @@
 ﻿# Bootsteam Theme
 
-Bootstrap theme inspired by Steam's store theme
+Bootstrap 4 (beta 3) theme inspired by Steam's store theme
 
-[Live Demo](https://cdn.rawgit.com/StrutTower/bootsteam-theme/1.0.2/demo/index.html)
+[Live Demo](https://cdn.rawgit.com/StrutTower/bootsteam-theme/4.0.0/demo/index.html)

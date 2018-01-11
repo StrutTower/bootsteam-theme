@@ -1,261 +1,144 @@
-﻿$twr-main-body-bg:              #1b2838 !default;
-$twr-input-bg:                  #2A3F5A !default;
-$twr-content-bg:                #171a21 !default;
-$twr-dark-content-bg:           #16202D !default;
+﻿
+// Custom Variables
+$twr-dark-content-bg: #16202D !default;
+$twr-darker-bg: #171a21 !default;
 
-$twr-border-radius: 2px !default;
+$twr-input-bg: #2A3F5A !default;
 
-$twr-navbar-default-background: #171a21 !default;
-$navbar-default-color: #c6d4df !default;
-$navbar-default-border: $twr-navbar-default-background;
+$twr-border-color: lighten(#434346, 5) !default;
 
-$twr-navbar-inverse-background: #3C6C96 !default;
-$twr-navbar-inverse-form-background: #5196C5 !default;
 
-$navbar-inverse-color: #67c1f5 !default;
-$navbar-inverse-link-color: $navbar-inverse-color !default;
-$navbar-inverse-border: $twr-navbar-inverse-background !default;
-$navbar-inverse-toggle-icon-bar-bg: white !default;
+// Colors
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
 
-$twr-border-color:              #434346 !default;
-$twr-component-border-color:    #3F3F46 !default;
+$primary: #417a9b !default;
+$secondary: darken(#868e96, 15) !default;
+$success: darken(#a4d007, 10) !default;
+$info: darken(#56ccb3, 15) !default;
+$warning: #d5702c !default;
+$danger: #dc3b36 !default;
+$light: #f8f9fa !default;
+$dark: #343a40 !default;
 
-$brand-primary:                 #417a9b !default;
-$brand-success:                 darken(#a4d007, 10) !default; 
-$brand-info:                    darken(#56b1cc, 5) !default;
-$brand-warning:                 #d5702c !default;
-$brand-danger:                  #dc3b36 !default;
+$border-radius: 2px;
 
-//== Bootstrap Variables
-$gray-base:                 #c6d4df !default;
-$gray-darker:               darken($gray-base, 13.5%) !default;
-$gray-dark:                 darken($gray-base, 20%) !default;
-$gray:                      darken($gray-base, 33.5%) !default;
-$gray-light:                darken($gray-base, 46.7%) !default;
-$gray-lighter:              darken($gray-base, 83.5%) !default;
-$body-bg:                   $twr-main-body-bg !default;
-$text-color:                $gray-base !default;
-$link-color:                lighten($brand-primary, 5) !default;
-$link-hover-color:          lighten($brand-primary, 10) !default;
-$font-family-sans-serif:    'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !default;
 
-//== Components
-$padding-base-vertical:     6px !default;
-$padding-base-horizontal:   12px !default;
+// Body
+$body-bg: #1b2838 !default;
+$body-color: #c6d4df !default;
 
-$padding-large-vertical:    8px !default;
-$padding-large-horizontal:  16px !default;
+// Tables
+$table-border-color: $gray-700 !default;
 
-$padding-small-vertical:    2px !default;
-$padding-small-horizontal:  8px !default;
+$table-dark-bg: $twr-dark-content-bg !default;
+$table-dark-color: $gray-300 !default;
 
-$padding-xs-vertical:       0.5px !default;
-$padding-xs-horizontal:     4px !default;
+// Buttons
 
-$line-height-large:         1.3333333 !default; // extra decimals for Win 8.1 Chrome
-$line-height-small:         1.5 !default;
+// Forms
+$input-bg: $twr-input-bg !default;
+$input-disabled-bg: desaturate(darken($twr-input-bg, 5), 5) !default;
 
-$border-radius-base:        $twr-border-radius !default;
-$border-radius-large:       $twr-border-radius !default;
-$border-radius-small:       $twr-border-radius !default;
-//#
+$input-color: $body-color !default;
+$input-border-color: $twr-border-color !default;
 
-//== Buttons
-$btn-default-color:         $text-color !default;
-$btn-default-bg:            transparent !default;
-$btn-default-border:        $twr-border-color !default;
-//#
+$input-placeholder-color: darken($gray-600, 5) !default;
 
-//== Forms
-$input-bg:                  $twr-input-bg !default;
-$input-bg-disabled:         $twr-main-body-bg !default;
-$input-color:               $text-color !default;
-$input-border:              $twr-border-color !default;
+$input-group-addon-bg: darken($input-bg, 5) !default;
 
-$input-border-focus:        $brand-primary !default;
-$input-color-placeholder:   #999 !default;
+// Dropdowns
+$dropdown-bg: $twr-dark-content-bg !default;
+$dropdown-divider-bg: $twr-border-color !default;
 
-$form-group-margin-bottom:  10px !default;
+$dropdown-link-color: $gray-100 !default;
+$dropdown-link-hover-color: lighten($dropdown-link-color, 5%) !default;
+$dropdown-link-hover-bg: lighten($twr-dark-content-bg, 2) !default;
 
-$legend-color:              $text-color !default;
+// Navs
+/*$nav-link-padding-y: .2rem !default;*/
 
-$input-group-addon-bg:      $twr-input-bg !default;
+$nav-tabs-border-color: $twr-border-color !default;
+$nav-tabs-link-hover-color: $body-color !default;
+$nav-tabs-link-hover-border-color: transparent transparent $nav-tabs-border-color !default;
+$nav-tabs-link-active-color: $gray-300;
+$nav-tabs-link-active-bg: $body-bg !default;
+$nav-tabs-link-active-border-color: $twr-border-color $twr-border-color $nav-tabs-link-active-bg !default;
 
-$page-header-border-color:  $gray-light !default;
-//#
+// Navbar
+$navbar-padding-y: .2rem !default;
 
-//== Dropdowns
-$dropdown-bg:               darken($body-bg, 5) !default;
+// Pagination
+$pagination-color: $body-color !default;
+$pagination-bg: $primary !default;
+$pagination-border-color: $primary !default;
 
-$dropdown-link-color:       $text-color !default;
-$dropdown-link-hover-color: $text-color !default;
+$pagination-hover-color: lighten($pagination-color, 5) !default;
+$pagination-hover-bg: lighten($primary, 5) !default;
+$pagination-hover-border-color: $pagination-hover-bg !default;
 
-$dropdown-divider-bg:       lighten($body-bg, 10) !default;
+// Jumbotron
+$jumbotron-bg: $twr-dark-content-bg !default;
 
-$dropdown-link-hover-bg:    lighten($body-bg, 5) !default;
-//#
 
-//== Nav
-//$navbar-default-color:          $twr-navbar-color !default;  //
-$navbar-default-bg:             $twr-navbar-default-background !default;
-//$navbar-default-border:         $twr-navbar-color !default;//darken($navbar-default-bg, 5);
-// Navbar links
-$navbar-default-link-color:                 #ccc !default;//lighten($gray-light, 15%);
-$navbar-default-link-hover-color:           #fff !default;
-$navbar-default-link-hover-bg:              lighten($navbar-default-bg, 5) !default;
-$navbar-default-link-active-color:          $navbar-default-link-hover-color !default;
-$navbar-default-link-active-bg:             darken($navbar-default-bg, 5%) !default;
-$navbar-default-link-disabled-color:        #444 !default;
-$navbar-default-link-disabled-bg:           transparent !default;
+// Cards
+$card-border-color: darken($twr-border-color, 10) !default;
+$card-bg: $twr-dark-content-bg !default;
 
-// Navbar brand label
-$navbar-default-brand-color:                $navbar-default-link-color !default;
-$navbar-default-brand-hover-color:          #fff !default;
-$navbar-default-brand-hover-bg:             transparent !default;
 
-// Navbar toggle
-$navbar-default-toggle-hover-bg:            #333 !default;
-$navbar-default-toggle-icon-bar-bg:         #fff !default;
-$navbar-default-toggle-border-color:        #333 !default;
+// Tooltips
 
-// Inverted
-$navbar-inverse-color:                      red !default;
-$navbar-inverse-bg:                         $twr-navbar-inverse-background !default;
-$navbar-inverse-border:                     darken($navbar-inverse-bg, 6.5%) !default;
-// Inverted navbar links
-$navbar-inverse-link-color:                 #777 !default;
-$navbar-inverse-link-hover-color:           #ccc !default;
-$navbar-inverse-link-hover-bg:              lighten($navbar-inverse-bg, 5) !default;
-$navbar-inverse-link-active-color:          #ccc !default;
-$navbar-inverse-link-active-bg:             lighten($navbar-inverse-bg, 5) !default;
-$navbar-inverse-link-disabled-color:        #ccc !default;
-$navbar-inverse-link-disabled-bg:           transparent !default;
 
-// Inverted navbar brand label
-$navbar-inverse-brand-color:                $navbar-inverse-link-color !default;
-$navbar-inverse-brand-hover-color:          darken($navbar-inverse-brand-color, 10%) !default;
-$navbar-inverse-brand-hover-bg:             transparent !default;
+// Popovers
+$popover-bg: $twr-dark-content-bg !default;
+$popover-border-color: $table-border-color !default;
 
-// Inverted navbar toggle
-$navbar-inverse-toggle-hover-bg:            #ddd !default;
-$navbar-inverse-toggle-icon-bar-bg:         #888 !default;
-$navbar-inverse-toggle-border-color:        #ddd !default;
-//#
+$popover-header-bg: lighten($popover-bg, 3%) !default;
 
-//== Tables
-$table-bg-accent:               lighten($body-bg, 2) !default;
-$table-bg-hover:                lighten($body-bg, 8) !default;
-$table-bg-active:               lighten($body-bg, 5) !default;
+// Modals
+$modal-content-bg: $body-bg !default;
+$modal-header-border-color: darken($twr-border-color, 5) !default;
 
-$table-border-color:            #555 !default;
-//#
 
-//== Popovers
-$popover-bg:        lighten($body-bg, 10) !default;
-//#
 
-//== List Group
-$list-group-bg:                 $twr-dark-content-bg !default;
-$list-group-border:             lighten($twr-dark-content-bg, 5) !default;
+// Progress bars
+$progress-bg: $twr-dark-content-bg !default;
 
-$list-group-hover-bg:           lighten($twr-dark-content-bg, 5) !default;
-$list-group-active-color:       $text-color !default;
-$list-group-active-bg:          $brand-primary !default;
-$list-group-active-border:      lighten($twr-dark-content-bg, 5) !default;
+// List group
+$list-group-bg: $twr-dark-content-bg !default;
+$list-group-border-color: darken($twr-border-color, 10) !default;
 
-$list-group-link-color:         $text-color !default;
-$list-group-link-hover-color:   $list-group-link-color !default;
-$list-group-link-heading-color: $text-color !default;
-//#
+$list-group-hover-bg: lighten($twr-dark-content-bg, 5) !default;
 
-//== Panels
-$panel-bg:                      $twr-content-bg !default;
+$list-group-action-color: $body-color !default;
+$list-group-action-hover-color: $white !default;
 
-$panel-inner-border:            $twr-component-border-color !default;
 
-$panel-default-text:            $text-color !default;
-$panel-default-border:          $twr-component-border-color !default;
+// Breadcrumbs
+$breadcrumb-bg: $twr-dark-content-bg !default;
 
-$panel-default-heading-bg:      lighten($twr-dark-content-bg, 5) !default;
-$panel-footer-bg:               $panel-default-heading-bg !default;
-//#
 
-//== Progress
-$progress-bg:                   $twr-dark-content-bg !default;
-//#
+// Carousel
+$carousel-indicator-width: 15px !default;
+$carousel-indicator-height: 9px !default;
+$carousel-indicator-spacer: 3px !default;
+$carousel-indicator-active-bg: $white !default;
 
-//== Tabs
-$nav-tabs-border-color:                         lighten($body-bg, 20) !default;
-$nav-link-hover-bg:                             darken($body-bg, 5) !default;
-$nav-tabs-link-hover-border-color:              transparent !default;
-$nav-tabs-active-link-hover-border-color:       $nav-tabs-border-color !default;
-$nav-tabs-justified-link-border-color:          $nav-tabs-border-color !default;
-$nav-tabs-justified-active-link-border-color:   $nav-tabs-border-color !default;
-//#
+// Close
+$close-color: $white !default;
+$close-text-shadow: 0 1px 0 $black !default;
 
-//== Pagination
-$pagination-color:              $text-color !default;
-$pagination-bg:                 $btn-default-bg !default;
-$pagination-border:             $btn-default-border !default;
+// Code
 
-$pagination-hover-color:        $brand-primary !default;
-$pagination-hover-bg:           lighten($pagination-bg, 20) !default;
-$pagination-hover-border:       $pagination-border !default;
+$kbd-bg: darken($gray-900, 8) !default;
 
-$pagination-active-color:       #fff !default !default;
-$pagination-active-bg:          $brand-primary !default;
-$pagination-active-border:      $brand-primary !default;
-
-$pagination-disabled-bg:        $btn-default-bg !default;
-$pagination-disabled-border:    $btn-default-border !default;
-//#
-
-//== Pager
-$pager-border-radius:           0 !default;
-$pager-active-color:            $text-color !default;
-//#
-
-//== Breadcrumbs
-$breadcrumb-bg:                 lighten($body-bg, 5) !default;
-$breadcrumb-color:              $text-color !default;
-$breadcrumb-active-color:       darken($text-color, 10) !default;
-//#
-
-//== Modal
-
-$modal-content-bg:              $body-bg !default;
-$modal-header-border-color:     lighten($body-bg, 10) !default;
-
-//--- Close
-$close-color:                   #ebebeb !default;
-$close-text-shadow:             0 1px 0 #666 !default;
-//#
-
-//== Code
-$code-color:                    $text-color !default;
-$code-bg:                       $twr-dark-content-bg !default;
-
-$kbd-color:                     $text-color !default;
-$kbd-bg:                        $twr-dark-content-bg !default;
-
-$pre-bg:                        $twr-dark-content-bg !default;
-$pre-color:                     $text-color !default;
-$pre-border-color:              $twr-component-border-color !default;
-
-$well-bg:                       $twr-content-bg !default;
-$well-border:                   $pre-border-color !default;
-//#
-
-//== Form States and Alerts
-$state-success-text:            $brand-success !default;
-$state-success-bg:              $brand-success !default;
-
-$state-info-text:               $brand-info !default;
-$state-info-bg:                 $brand-info !default;
-
-$state-warning-text:            $brand-warning !default;
-$state-warning-bg:              $brand-warning !default;
-
-$state-danger-text:             $brand-danger !default;
-$state-danger-bg:               $brand-danger !default;
-//#
+$pre-color: $gray-100 !default;
