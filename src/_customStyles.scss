@@ -1,0 +1,15 @@
+﻿///<reference path="variables.scss" />
+///<reference path="../node_modules/bootstrap/scss/bootstrap.scss" />
+
+.btn-default {
+    background: $body-bg;
+    border: 1px solid $input-border-color;
+
+    &:hover, &:active, &:focus {
+        background: lighten($body-bg, 5);
+    }
+
+    &:disabled, .disabled {
+        background: $body-bg;
+    }
+}

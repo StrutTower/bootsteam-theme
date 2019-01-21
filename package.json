@@ -1,15 +1,15 @@
 {
-  "version": "4.0.0",
+  "version": "4.1.0",
   "name": "bootsteam-theme",
   "private": true,
   "devDependencies": {
-    "bootstrap": "4.0.0-beta.3",
-    "gulp": "~3.9.1",
-    "gulp-sass": "~3.1.0",
+    "bootstrap": "~4.2.1",
+    "gulp": "~4.0.0",
+    "gulp-sass": "~4.0.2",
     "gulp-concat": "~2.6.1",
-    "gulp-uglify": "~3.0.0",
-    "gulp-rename": "~1.2.2",
+    "gulp-uglify": "~3.0.1",
+    "gulp-rename": "~1.4.0",
     "gulp-cssmin": "~0.2.0",
-    "gulp-replace": "~0.6.1"
+    "gulp-clean-css": "~4.0.0"
   }
 }
