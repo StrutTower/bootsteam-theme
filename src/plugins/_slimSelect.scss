@@ -1,0 +1,106 @@
+﻿///<reference path="../twr-variables.scss" />
+///<reference path="../twr-variables-dark.scss" />
+///<reference path="../../node_modules/bootstrap/scss/variables.scss" />
+
+:root,
+[data-bs-theme=light] {
+    --ss-primary-color: #{$primary};
+    --ss-bg-color: #{$input-bg};
+    --ss-font-color: #{$input-color};
+    --ss-font-placeholder-color: #{$input-placeholder-color};
+    --ss-disabled-color: #{$input-disabled-color};
+    --ss-border-color: #{$input-border-color};
+    --ss-highlight-color: #{$primary};
+    --ss-success-color: #{$success};
+    --ss-error-color: #{$danger};
+    --ss-main-height: 30px;
+    --ss-border-radius: 2px 2px 0 0;
+}
+
+.ss-main {
+    border: none;
+    border-bottom: 1px solid var(--ss-border-color);
+
+
+    &:focus {
+        box-shadow: none;
+        border-bottom-color: $primary;
+    }
+
+    &.ss-disabled:focus {
+        box-shadow: none;
+        border-bottom-color: $input-border-color;
+    }
+}
+
+.ss-content {
+    .ss-search input {
+        background: darken($input-bg, 3);
+        color: $body-color;
+        border: none;
+        border-bottom: 1px solid $input-border-color;
+
+        &:focus {
+            box-shadow: none;
+            border-bottom-color: $primary;
+        }
+    }
+
+    .ss-list .ss-option {
+        &.ss-highlighted, &:not(.ss-disabled).ss-selected {
+            color: $white;
+        }
+
+        &:hover {
+            color: $white;
+            background-color: darken($primary, 5);
+        }
+    }
+}
+
+.ss-main .ss-values .ss-value {
+    .ss-value-text {
+        color: $white;
+    }
+
+    .ss-value-delete {
+        border-left-color: rgba(255, 255, 255, 0.2);
+        height: 1rem;
+
+        svg path {
+            stroke: rgba(255, 255, 255, 0.5);
+        }
+    }
+}
+// Bootstrap input-group support
+.input-group > .ss-main {
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    min-width: 0;
+}
+
+// Prevent the select from showing up before the plugin loads
+select.slim-select-basic {
+    opacity: 0;
+}
+
+[data-bs-theme=dark] {
+    --ss-bg-color: #{$input-bg-dark};
+    --ss-border-color: #{$input-border-color-dark};
+
+    .ss-content {
+        .ss-search input {
+            color: $body-color-dark;
+            background: darken($input-bg-dark, 3);
+        }
+    }
+
+    .ss-main.ss-disabled {
+        background: lighten($input-bg-dark, 5);
+
+        &:focus {
+            border-bottom-color: lighten($input-bg-dark, 5);
+        }
+    }
+}

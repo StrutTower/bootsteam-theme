@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('./partials/_head.html', {
+        "title": "Typography | Tower Bootstrap Theme"
+    })
+</head>
+<body>
+    @@include('./partials/_nav.html')
+
+    <main class="container mt-5 pt-2">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Homepage</a></li>
+            <li class="breadcrumb-item active">Typography</li>
+        </ol>
+
+
+        <h2 class="display-5">Typography</h2>
+        <hr />
+        <div class="row">
+            <div class="col-12 col-sm-4">
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <h4>Heading 4</h4>
+                <h5>Heading 5</h5>
+                <h6>Heading 6</h6>
+                <h3>
+                    Heading
+                    <small class="text-muted">with muted text</small>
+                </h3>
+                <p class="lead">Lead Paragraph. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+            </div>
+
+            <div class="col-12 col-sm-4">
+                <h4>Inline text elements</h4>
+                <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+                <p><del>This line of text is meant to be treated as deleted text.</del></p>
+                <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+                <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+                <p><u>This line of text will render as underlined</u></p>
+                <p><small>This line of text is meant to be treated as fine print.</small></p>
+                <p><strong>This line rendered as bold text.</strong></p>
+                <p class="fw-semibold">fw-semibold - Custom class for font-weight: 600</p>
+                <p><em>This line rendered as italicized text.</em></p>
+            </div>
+
+            <div class="col-12 col-sm-4">
+                <h4>Emphasis classes</h4>
+                <p class="text-primary">text-primary - Lorem ipsum dolor sit amet</p>
+                <p class="text-secondary">text-secondary - Lorem ipsum dolor sit amet</p>
+                <p class="text-success">text-success - Lorem ipsum dolor sit amet</p>
+                <p class="text-info">text-info - Lorem ipsum dolor sit amet</p>
+                <p class="text-warning">text-warning - Lorem ipsum dolor sit amet</p>
+                <p class="text-danger">text-danger - Lorem ipsum dolor sit amet</p>
+                <p class="text-light">text-light - Lorem ipsum dolor sit amet</p>
+                <p class="text-dark">text-dark - Lorem ipsum dolor sit amet</p>
+                <p class="text-muted">text-muted - Lorem ipsum dolor sit amet</p>
+                <p class="text-faded">text-faded - Custom class that uses opacity instead of changing the font color</p>
+            </div>
+
+            <div class="col-12 col-sm-4">
+                <h4>Display Headings</h4>
+                <div class="display-1">Display 1</div>
+                <div class="display-2">Display 2</div>
+                <div class="display-3">Display 3</div>
+                <div class="display-4">Display 4</div>
+                <div class="display-5">Display 5</div>
+                <div class="display-6">Display 6</div>
+
+                <em class="mt-2 d-block small">display-5 and display-6 are custom classes and are not normally in Bootstrap</em>
+            </div>
+
+            <div class="col-12 col-sm-4">
+                <h4>Lead</h4>
+                <p class="lead">
+                    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+                </p>
+            </div>
+
+            <div class="col-12 col-sm-4">
+                <h4>Blockquote</h4>
+                <figure>
+                    <blockquote class="blockquote">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        Someone famous in <cite title="Source Title">Source Title</cite>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <hr />
+
+
+        <h4>Fieldset</h4>
+        <fieldset>
+            <legend>Legend</legend>
+            <p>Content</p>
+            <div>More Content</div>
+        </fieldset>
+
+        <hr />
+
+        <h4>Code Elements</h4>
+        <h5>Inline Code</h5>
+        <p>
+            For example, <code>&lt;section&gt;</code> should be wrapped as inline.
+        </p>
+
+        <h5>User Input</h5>
+        <p>
+            To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
+            To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
+        </p>
+
+        <h5>pre</h5>
+        <pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
+
+        <h5>Variables</h5>
+        <var>y</var> = <var>m</var><var>x</var> + <var>b</var>
+
+        <h5>Sample Output</h5>
+        <samp>This text is meant to be treated as sample output from a computer program.</samp>
+
+        <br />
+        <br />
+    </main>
+
+    @@include('./partials/_footer.html')
+    @@include('./partials/_scripts.html')
+</body>
+</html>

@@ -1,0 +1,37 @@
+///<reference path="twr-variables.scss" />
+///<reference path="twr-variables-dark.scss" />
+///<reference path="../node_modules/bootstrap/scss/variables.scss" />
+
+.alert {
+    &.alert-success a {
+        color: $success;
+    }
+
+    &.alert-danger a {
+        color: $danger;
+    }
+
+    &.alert-info a {
+        color: $info;
+    }
+}
+
+[data-bs-theme="dark"] {
+    .alert {
+        &.alert-success a {
+            color: darken($success, 5);
+        }
+
+        &.alert-danger a {
+            color: darken($danger, 5);
+        }
+
+        &.alert-warning a {
+            color: darken($warning, 5);
+        }
+
+        &.alert-info a {
+            color: $info;
+        }
+    }
+}

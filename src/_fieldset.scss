@@ -1,0 +1,27 @@
+///<reference path="twr-variables.scss" />
+///<reference path="twr-variables-dark.scss" />
+///<reference path="../node_modules/bootstrap/scss/variables.scss" />
+
+fieldset {
+  border: 1px solid $input-border-color;
+  padding-top: 0.4rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  padding-bottom: 0.8rem;
+
+  legend {
+    width: auto;
+    float: none;
+    font-size: 1.1rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    margin-left: 0.3rem;
+    margin-bottom: 0;
+  }
+}
+
+@include color-mode(dark) {
+  fieldset {
+    border-color: $input-border-color-dark;
+  }
+}

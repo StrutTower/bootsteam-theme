@@ -1,0 +1,22 @@
+﻿///<reference path="twr-variables.scss" />
+///<reference path="../node_modules/bootstrap/scss/variables.scss" />
+
+$body-color-dark: #c6d4df !default;
+$body-bg-dark: #1b2838 !default;
+
+$link-color-dark: lighten(#417a9b, 5) !default;
+$link-hover-color-dark: darken($link-color-dark, 10) !default;
+
+$body-secondary-bg-dark: lighten($body-bg-dark, 10) !default;
+
+
+
+$form-switch-color-dark: lighten($body-secondary-bg-dark, 10) !default;
+
+
+$form-invalid-color-dark: #ea868f !default;
+$form-invalid-border-color-dark: #ea868f !default;
+
+
+$input-border-color-dark: lighten($body-bg-dark, 10);
+$input-bg-dark: lighten($body-bg-dark, 3);

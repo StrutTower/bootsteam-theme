@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('./partials/_head.html', {
+        "title": "Theme Switcher | Tower Bootstrap Theme"
+    })
+</head>
+<body>
+    @@include('./partials/_nav.html')
+
+    <main class="container mt-5 pt-2">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Homepage</a></li>
+            <li class="breadcrumb-item active">Theme Switcher</li>
+        </ol>
+
+        <p>
+            More info on how Bootstrap's theme switching works can be found here:
+            <a href="https://getbootstrap.com/docs/5.3/customize/color-modes/">https://getbootstrap.com/docs/5.3/customize/color-modes/</a>
+        </p>
+
+        <p>
+            This code is similar to the code provided on Bootstraps' website but is set up to work with classes instead of SVGs so you can use a font icon library.
+        </p>
+
+        <p>
+            First create a new JavaScript file with the following code. This should be separate from any bundling, if you are doing that.
+            This is because you want to include this code high up on the DOM to prevent the screen from flashing white when it loads.
+        </p>
+
+        <h5>ThemeHandler Javascript</h5>
+        <div class="card mb-3">
+            <div class="card-body bg-dark">
+                <pre><code>@@include('../docs/scripts/themeHandler.js')</code></pre>
+            </div>
+        </div>
+
+        <p>
+            Add a script tag to the head of the page. It needs to included early on the DOM to prevent the page from flashing white if someone has defaulted to a dark theme.
+        </p>
+
+        <p>
+            Add the following to the navbar's menu. This example is using Material Design Icons,
+            <a href="https://pictogrammers.com/library/mdi" target="_blank" rel="noopener noreferrer">https://pictogrammers.com/library/mdi</a>
+        </p>
+
+        <h5>Navbar Theme Selector HTML</h5>
+        <div class="card mb-3">
+            <div class="card-body bg-dark">
+                <pre><code>&lt;li class=&quot;nav-item dropdown&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;nav-link dropdown-toggle&quot; data-bs-toggle=&quot;dropdown&quot;&gt;
+        &lt;span id=&quot;current-theme&quot;&gt;&lt;/span&gt; &lt;span class=&quot;d-md-none&quot;&gt;Switch Themes&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;div class=&quot;dropdown-menu&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;dropdown-item&quot; data-bs-theme-value=&quot;light&quot;&gt;&lt;span class=&quot;mdi mdi-weather-sunny&quot;&gt;&lt;/span&gt; Light&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;dropdown-item&quot; data-bs-theme-value=&quot;dark&quot;&gt;&lt;span class=&quot;mdi mdi-weather-night&quot;&gt;&lt;/span&gt; Dark&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;dropdown-item&quot; data-bs-theme-value=&quot;auto&quot;&gt;&lt;span class=&quot;mdi mdi-theme-light-dark&quot;&gt;&lt;/span&gt; Auto&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/li&gt;</code></pre>
+            </div>
+        </div>
+
+    </main>
+
+    @@include('./partials/_footer.html')
+    @@include('./partials/_scripts.html')
+</body>
+</html>

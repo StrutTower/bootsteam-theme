@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('./partials/_head.html', {
+        "title": "Carousel | Tower Bootstrap Theme"
+    })
+</head>
+<body>
+    @@include('./partials/_nav.html')
+
+    <main class="container mt-5 pt-2">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Homepage</a></li>
+            <li class="breadcrumb-item active">Carousel</li>
+        </ol>
+
+        <h2 class="display-4">Carousel</h2>
+        <hr>
+
+        <div id="carousel-example" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-example" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carousel-example" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-example" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-block w-100" style="height:200px;background:#808080;text-align:center;">
+                        <h3 style="padding-top:50px;" class="text-white">First slide</h3>
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide</h5>
+                        <p>First slide</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-block w-100" style="height:200px;background:#808080;text-align:center;">
+                        <h3 style="padding-top:50px;" class="text-white">Second slide</h3>
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide</h5>
+                        <p>Second slide</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-block w-100" style="height:200px;background:#808080;text-align:center;">
+                        <h3 style="padding-top:50px;" class="text-white">Third slide</h3>
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide</h5>
+                        <p>Third slide</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" role="button" data-bs-target="#carousel-example" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" role="button" data-bs-target="#carousel-example" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </main>
+
+    @@include('./partials/_footer.html')
+    @@include('./partials/_scripts.html')
+</body>
+</html>

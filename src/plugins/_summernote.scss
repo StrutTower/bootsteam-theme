@@ -1,0 +1,45 @@
+﻿///<reference path="twr-variables.scss" />
+///<reference path="twr-variables-dark.scss" />
+///<reference path="../node_modules/bootstrap/scss/variables.scss" />
+
+div.note-editor.note-frame {
+    border-color: $input-border-color;
+
+    div.note-toolbar {
+        background: darken($body-bg,2);
+        border-bottom: 1px solid $input-border-color;
+
+        & > .note-btn-group {
+            border: 1px solid $input-border-color;
+
+            .note-btn {
+                background: $body-bg;
+                color: $body-color;
+
+                &.active {
+                    background: $primary;
+                }
+
+                &:hover {
+                    background: darken($body-bg,3);
+                }
+            }
+        }
+    }
+
+    .note-editing-area .note-editable {
+        color: $body-color;
+        background: $input-bg;
+    }
+
+    .note-statusbar {
+        background: darken($body-bg,2);
+        border-top-color: $input-border-color;
+    }
+}
+
+
+.note-btn.btn-sm {
+    padding: .125rem .5rem;
+    font-size: 1rem;
+}

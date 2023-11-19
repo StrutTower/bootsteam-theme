@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('./partials/_head.html', {
+        "title": "Toasts | Tower Bootstrap Theme"
+    })
+</head>
+<body>
+    @@include('./partials/_nav.html')
+
+    <main class="container mt-5 pt-2">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Homepage</a></li>
+            <li class="breadcrumb-item active">Toasts</li>
+        </ol>
+
+        <h2 class="display-4">Toasts</h2>
+        <hr />
+
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="toast-container">
+                    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+                        <div class="toast-header">
+                            <strong class="me-auto">Default Toast</strong>
+                            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                        </div>
+                        <div class="toast-body">
+                            Hello, world! This is a toast message.
+                        </div>
+                    </div>
+                    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+                        <div class="toast-header bg-primary text-white">
+                            <strong class="me-auto">Primary Header Toast</strong>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+                        </div>
+                        <div class="toast-body">
+                            Hello, world! This is a toast message.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <button type="button" class="btn btn-primary mb-2" onclick="toast('Default')">Toast Test</button>
+                <button type="button" class="btn btn-success mb-2" onclick="toast('bg-success', 'bg-success')">Toast Test</button>
+                <button type="button" class="btn btn-info mb-2" onclick="toast('bg-into', 'bg-info')">Toast Test</button>
+                <button type="button" class="btn btn-danger mb-2" onclick="toast('bg-danger', 'bg-danger')">Toast Test</button>
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+    </main>
+
+    <div id="toast-notifications" class="toast-container position-absolute p-3 bottom-0 end-0"></div>
+
+    <div id="toast-template" hidden>
+        <div class="toast fade hide" role="alert">
+            <div class="toast-header bg-primary text-white">
+                <strong class="me-auto">Toast</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+            </div>
+        </div>
+    </div>
+
+    @@include('./partials/_footer.html')
+    @@include('./partials/_scripts.html')
+</body>
+</html>

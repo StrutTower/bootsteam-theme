@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('./partials/_head.html', {
+        "title": "Alerts | Tower Bootstrap Theme"
+    })
+</head>
+<body>
+    @@include('./partials/_nav.html')
+
+    <main class="container mt-5 pt-2">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Homepage</a></li>
+            <li class="breadcrumb-item active">Alerts</li>
+        </ol>
+
+        <h2 class="display-4">Alerts</h2>
+        <hr />
+        <div class="row">
+            <div class="col-12 col-sm-6">
+                <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                    <div>This is a primary alert</div>
+                    <a href="#">Test Link</a>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6">
+                <div class="alert alert-secondary" role="alert">
+                    <div>This is a secondary alert</div>
+                    <a href="#">Test Link</a>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6">
+                <div class="alert alert-success" role="alert">
+                    <div>This is a success alert</div>
+                    <a href="#">Test Link</a>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6">
+                <div class="alert alert-danger" role="alert">
+                    <div>This is a danger alert</div>
+                    <a href="#">Test Link</a>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6">
+                <div class="alert alert-warning" role="alert">
+                    <div>This is a warning alert</div>
+                    <a href="#">Test Link</a>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6">
+                <div class="alert alert-info" role="alert">
+                    <div>This is a info alert</div>
+                    <a href="#">Test Link</a>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6">
+                <div class="alert alert-light" role="alert">
+                    <div>This is a light alert</div>
+                    <a href="#">Test Link</a>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6">
+                <div class="alert alert-dark" role="alert">
+                    <div>This is a dark alert</div>
+                    <a href="#">Test Link</a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    @@include('./partials/_footer.html')
+    @@include('./partials/_scripts.html')
+</body>
+</html>

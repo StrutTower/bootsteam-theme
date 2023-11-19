@@ -1,0 +1,147 @@
+﻿///<reference path="twr-variables.scss" />
+///<reference path="twr-variables-dark.scss" />
+///<reference path="../node_modules/bootstrap/scss/variables.scss" />
+
+.form-control, .form-select {
+    border-width: 0 0 1px 0;
+}
+
+/* input group border fix */
+.input-group > .form-control, .input-group > .form-select {
+    border-right: 1px solid var(--bs-border-color);
+    border-left: 1px solid var(--bs-border-color);
+
+    &:first-child, &:last-child {
+        border-left: 0;
+    }
+}
+
+.form-control.input-validation-error {
+    &:focus:not(:read-only) {
+        border-bottom-color: var(--bs-form-invalid-color);
+        box-shadow: none;
+    }
+}
+
+
+
+/* ASP.NET validation error messages */
+.field-validation-error, .validation-summary-errors {
+    color: var(--bs-form-invalid-color);
+}
+
+/* jQuery validation input validation error */
+.form-control.input-validation-error, .form-select.input-validation-error {
+    border-color: var(--bs-form-invalid-color);
+}
+
+/* input type=color fixes */
+input[type="color"].form-control {
+    padding: .3rem .5rem
+}
+
+input[type="color"]:not(.form-control) {
+    padding: 0;
+    border: none;
+    display: block;
+    height: 1.8rem;
+}
+
+/* custom label styles */
+label {
+    font-size: 0.7em;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    margin-left: 0.4em;
+    opacity: 0.7;
+    letter-spacing:0.5px;
+}
+
+label.form-check-label {
+    font-size: 1rem;
+    text-transform: none;
+    margin-left: 0;
+    opacity: 1;
+    letter-spacing: unset;
+}
+
+.form-floating > label {
+    font-size: 1rem;
+    text-transform: none;
+    margin-left: 0;
+    opacity: .7;
+}
+
+.form-floating > .form-control-plaintext ~ label::after,
+.form-floating > .form-control:focus ~ label::after,
+.form-floating > .form-control:not(:placeholder-shown) ~ label::after,
+.form-floating > .form-select ~ label::after {
+    background-color: transparent;
+}
+
+
+/* form-select fixes */
+.form-select {
+    -moz-padding-start: $input-padding-x;
+
+    optgroup {
+        -moz-appearance: none;
+        background: darken($input-bg,5);
+    }
+
+    &[multiple] {
+        option:checked {
+            background: darken($primary, 10);
+            color: $white;
+        }
+
+        option:hover {
+            color: $white;
+            background: darken($primary, 15);
+        }
+    }
+
+    &:disabled {
+        background: $input-disabled-bg;
+    }
+}
+
+.form-check-label, .form-check-input,
+label.form-check, label.form-check-inline {
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.form-help-text {
+    opacity: 0.7;
+    padding-left: 10px;
+    font-size: 0.8rem;
+}
+
+.form-check ~ .form-help-text {
+    transform: translateY(-7px);
+    padding-left: 25px;
+}
+
+.form-control::file-selector-button {
+    border-top: 1px $input-border-color solid;
+    border-left: 1px $input-border-color solid;
+    border-right: 1px $input-border-color solid;
+    border-top-left-radius: $border-radius;
+}
+
+.form-control, .form-select {
+    &:disabled, &[readonly] {
+        color: lighten($body-color, 40);
+        background-color: lighten($input-bg, 4);
+
+        &::placeholder {
+            color: lighten($body-color, 40);
+        }
+    }
+
+    &:focus[readonly] {
+        border-color: darken($input-border-color, 15);
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://unpkg.com/slim-select@latest/dist/slimselect.css" rel="stylesheet" />
+    @@include('./partials/_head.html', {
+        "title": "Plugins | Tower Bootstrap Theme"
+    })
+</head>
+<body>
+    @@include('./partials/_nav.html')
+
+    <main class="container mt-5 pt-2">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Homepage</a></li>
+            <li class="breadcrumb-item active">Plugins</li>
+        </ol>
+
+        <h2 class="display-5">Plugin Styles</h2>
+        <p class="text-muted">The following are JavaScript plugins that have support in this theme.</p>
+        <hr />
+
+        <div class="mb-3">
+            <h3>Slim Select <span class="h5"><a href="https://slimselectjs.com/" target="_blank" rel="noopener noreferrer" class="small">https://slimselectjs.com/</a></span></h3>
+
+            <div class="mb-3">
+                <label>Single Select List</label>
+                <select class="slim-select-test">
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                    <option value="4">Option 4</option>
+                    <option value="5">Option 5</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label>Multiple Select List</label>
+                <select class="slim-select-test" multiple>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                    <option value="4">Option 4</option>
+                    <option value="5">Option 5</option>
+                </select>
+            </div>
+        </div>
+
+        <br />
+        <br />
+        <br />
+    </main>
+
+    @@include('./partials/_footer.html')
+    <script src="https://unpkg.com/slim-select@latest/dist/slimselect.min.js"></script>
+    @@include('./partials/_scripts.html')
+</body>
+</html>

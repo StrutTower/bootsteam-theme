@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://unpkg.com/slim-select@latest/dist/slimselect.css" rel="stylesheet" />
+    <title>Plugins | Tower Bootstrap Theme</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Demo of custom Bootstrap theme">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.3.67/css/materialdesignicons.min.css" rel="stylesheet" />
+    <link href="../dist/bootsteam-theme.min.css" rel="stylesheet" />
+    <script src="scripts/themeHandler.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">Tower Bootstrap Theme</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse-area">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar-collapse-area">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <button type="button" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <span id="current-theme"></span> <span class="d-md-none">Switch Themes</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <button type="button" class="dropdown-item" data-bs-theme-value="light"><span class="mdi mdi-weather-sunny"></span> Light</button>
+                            <button type="button" class="dropdown-item" data-bs-theme-value="dark"><span class="mdi mdi-weather-night"></span> Dark</button>
+                            <button type="button" class="dropdown-item" data-bs-theme-value="auto"><span class="mdi mdi-theme-light-dark"></span> Auto</button>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://github.com/StrutTower/tower-bootstrap-theme" rel="noreferrer noopener" class="nav-link">
+                            GitHub
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-5 pt-2">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Homepage</a></li>
+            <li class="breadcrumb-item active">Plugins</li>
+        </ol>
+
+        <h2 class="display-5">Plugin Styles</h2>
+        <p class="text-muted">The following are JavaScript plugins that have support in this theme.</p>
+        <hr />
+
+        <div class="mb-3">
+            <h3>Slim Select <span class="h5"><a href="https://slimselectjs.com/" target="_blank" rel="noopener noreferrer" class="small">https://slimselectjs.com/</a></span></h3>
+
+            <div class="mb-3">
+                <label>Single Select List</label>
+                <select class="slim-select-test">
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                    <option value="4">Option 4</option>
+                    <option value="5">Option 5</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label>Multiple Select List</label>
+                <select class="slim-select-test" multiple>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                    <option value="4">Option 4</option>
+                    <option value="5">Option 5</option>
+                </select>
+            </div>
+        </div>
+
+        <br />
+        <br />
+        <br />
+    </main>
+
+    <footer class="container">
+        <hr />
+        <p>TowerSoft</p>
+    </footer>
+    <script src="https://unpkg.com/slim-select@latest/dist/slimselect.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="scripts/scripts.js"></script>
+</body>
+
+</html>

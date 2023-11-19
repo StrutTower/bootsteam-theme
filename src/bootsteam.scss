@@ -1,5 +1,25 @@
 ﻿
-@import "_variables.scss";
+$enable-shadows: true !default;
+
+$gray-800: #2A2A2E !default;
+
+$gray-900: darken($gray-800, 4) !default;
+$gray-700: lighten($gray-800, 10) !default;
+$gray-600: lighten($gray-700, 10) !default;
+$gray-500: lighten($gray-600, 10) !default;
+$gray-400: lighten($gray-500, 10) !default;
+$gray-300: lighten($gray-400, 10) !default;
+$gray-200: lighten($gray-300, 10) !default;
+$gray-100: lighten($gray-200, 10) !default;
+
+@import "_twr-variables.scss";
+@import "_twr-variables-dark.scss";
+
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
-@import "_overrides.scss";
-@import "customStyles";
+
+@import "_darkThemeOverrides.scss";
+@import "_forms.scss";
+@import "_fieldset.scss";
+@import "_buttons.scss";
+@import "_alerts.scss";
+@import "plugins/_allPlugins.scss";

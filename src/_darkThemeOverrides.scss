@@ -1,0 +1,70 @@
+﻿///<reference path="twr-variables.scss" />
+///<reference path="twr-variables-dark.scss" />
+///<reference path="../node_modules/bootstrap/scss/variables.scss" />
+
+@include color-mode(dark) {
+    strong, .font-weight-bold {
+        color: white;
+    }
+
+    kbd {
+        color: $body-color-dark;
+        background-color: black;
+    }
+
+    .form-control, .form-select {
+        background-color: $input-bg-dark;
+        border-color: $input-border-color-dark;
+
+        &:disabled, &[readonly] {
+            color: darken($body-color-dark, 40);
+            background-color: darken($input-bg-dark, 4);
+
+            &::placeholder {
+                color: darken($body-color-dark, 40);
+            }
+        }
+
+        &:focus[readonly] {
+            border-color: lighten($input-border-color-dark, 5);
+        }
+
+        &:focus {
+            border-color: lighten($primary, 5);
+        }
+
+        &.is-valid {
+            border-color: $success;
+        }
+
+        &.is-invalid, &.input-validation-error {
+            border-color: $danger;
+        }
+    }
+
+    .input-group > .form-control, .input-group > .form-select {
+        border-right-color: $input-border-color-dark;
+        border-left-color: $input-border-color-dark;
+    }
+
+    .input-group-text {
+        border-color: $input-border-color-dark;
+    }
+
+    .form-check-input {
+        border-color: lighten($input-border-color-dark, 3);
+        background-color: $input-bg-dark;
+
+        &:checked {
+            background-color: $primary;
+        }
+    }
+
+    .form-control::file-selector-button {
+        border-color: $input-border-color-dark;
+    }
+
+    .blockquote-footer {
+        color: $text-muted;
+    }
+}
