@@ -1,5 +1,5 @@
-demo/* linguist-vendored
-demo-templates/**/* linguist-vendored
+docs/* linguist-vendored
+docs-templates/**/* linguist-vendored
 
 ###############################################################################
 # Set default behavior to automatically normalize line endings.
