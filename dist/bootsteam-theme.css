@@ -11954,19 +11954,6 @@ textarea.form-control-lg {
   color: var(--bs-secondary-color);
 }
 
-.form-control, .form-select {
-  /*border-width: 0 0 1px 0;*/
-}
-
-/* input group border fix */
-/*.input-group > .form-control, .input-group > .form-select {
-    border-right: 1px solid var(--bs-border-color);
-    border-left: 1px solid var(--bs-border-color);
-
-    &:first-child, &:last-child {
-        border-left: 0;
-    }
-}*/
 .form-control.input-validation-error:focus:not(:read-only) {
   border-color: var(--bs-form-invalid-color);
   box-shadow: none;
