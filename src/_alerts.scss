@@ -5,14 +5,26 @@
 .alert {
     &.alert-success a {
         color: $success;
+
+        &:hover {
+            color: darken($success, 5);
+        }
     }
 
     &.alert-danger a {
         color: $danger;
+
+        &:hover {
+            color: darken($danger, 5);
+        }
     }
 
     &.alert-info a {
         color: $info;
+
+        &:hover {
+            color: darken($info, 5);
+        }
     }
 }
 
@@ -20,18 +32,34 @@
     .alert {
         &.alert-success a {
             color: darken($success, 5);
+
+            &:hover {
+                color: darken($success, 10);
+            }
         }
 
         &.alert-danger a {
             color: darken($danger, 5);
+
+            &:hover {
+                color: darken($danger, 10);
+            }
         }
 
         &.alert-warning a {
             color: darken($warning, 5);
+
+            &:hover {
+                color: darken($warning, 10);
+            }
         }
 
         &.alert-info a {
             color: $info;
+
+            &:hover {
+                color: darken($info, 10);
+            }
         }
     }
 }

@@ -42,6 +42,10 @@
         }
     }
 
+    .form-select optgroup {
+        background: darken($body-bg-dark, 3);
+    }
+
     .input-group > .form-control, .input-group > .form-select {
         border-right-color: $input-border-color-dark;
         border-left-color: $input-border-color-dark;

@@ -1,23 +1,29 @@
 ﻿///<reference path="../node_modules/bootstrap/scss/variables.scss" />
 
 $body-color: #2a465b !default;
-$body-bg: #dfedff !default;
+$body-bg: #e1e9f2 !default;
 
 $primary: #417a9b !default;
 $success: #7d9f05 !default;
 $info: #31a48c !default;
+/*$info: #80458e !default;*/
 $warning: #d5702c !default;
 $danger: #dc3b36 !default;
 $light: #f8f9fa !default;
-$dark: #343a40 !default;
+$dark: lighten(#111924, 1) !default;
+
+
+$body-tertiary-bg: darken($body-bg, 10) !default;
+
+$min-contrast-ratio: 3 !default;
 
 
 /* border radius */
 $border-radius: 2px !default;
 $border-radius-sm: 2px !default;
-$border-radius-lg: 3px !default;
-$border-radius-xl: 3px 0 0 !default;
-$border-radius-xxl: 4px !default;
+$border-radius-lg: 2px !default;
+$border-radius-xl: 2px !default;
+$border-radius-xxl: 2px !default;
 
 /* nav */
 $nav-link-padding-y: .2rem !default;
@@ -43,9 +49,9 @@ $input-focus-border-color: $primary !default;
 $input-placeholder-color: #888 !default;
 
 
-$input-border-radius: 2px 2px 0 0 !default;
+/*$input-border-radius: 2px 2px 0 0 !default;
 $input-border-radius-sm: 2px 2px 0 0 !default;
-$input-border-radius-lg: 3px 3px 0 0 !default;
+$input-border-radius-lg: 3px 3px 0 0 !default;*/
 
 $input-disabled-bg: lighten($input-bg, 4) !default;
 

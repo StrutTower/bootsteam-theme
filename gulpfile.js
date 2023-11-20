@@ -12,7 +12,8 @@ var options = {
         sassMainFile: 'src/bootsteam.scss',
         output: 'bootsteam-theme.css',
         sassFiles: 'src/**/*.scss',
-        dest: 'dist'
+        dest: 'dist',
+        docs: 'docs/css'
     },
     html: {
         files: 'docs-templates/*.html',
@@ -28,7 +29,8 @@ gulp.task('build-css', function () {
         .pipe(gulp.dest(options.css.dest))
         .pipe(cleancss())
         .pipe(rename({ suffix: '.min' }))
-        .pipe(gulp.dest(options.css.dest));
+        .pipe(gulp.dest(options.css.dest))
+        .pipe(gulp.dest(options.css.docs));
 });
 
 gulp.task('build-html', function () {
