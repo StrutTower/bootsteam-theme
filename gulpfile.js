@@ -24,7 +24,11 @@ var options = {
 
 gulp.task('build-css', function () {
     return gulp.src(options.css.sassMainFile)
-        .pipe(sass({ errLogToConsole: true }).on('error', sass.logError))
+        .pipe(sass({
+            errLogToConsole: true,
+            quietDeps: true,
+            silenceDeprecations: ['legacy-js-api', 'color-functions', 'global-builtin', 'import']
+        }).on('error', sass.logError))
         .pipe(concat(options.css.output))
         .pipe(gulp.dest(options.css.dest))
         .pipe(cleancss())

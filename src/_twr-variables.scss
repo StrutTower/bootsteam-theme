@@ -1,12 +1,13 @@
 ﻿///<reference path="../node_modules/bootstrap/scss/variables.scss" />
 
+$prefix: 'bs-';
+
 $body-color: #2a465b !default;
 $body-bg: #e1e9f2 !default;
 
 $primary: #417a9b !default;
 $success: #7d9f05 !default;
 $info: #31a48c !default;
-/*$info: #80458e !default;*/
 $warning: #d5702c !default;
 $danger: #dc3b36 !default;
 $light: #f8f9fa !default;
@@ -14,6 +15,9 @@ $dark: lighten(#111924, 1) !default;
 
 
 $body-tertiary-bg: darken($body-bg, 10) !default;
+
+
+$border-color: darken($body-bg, 15) !default;
 
 $min-contrast-ratio: 3 !default;
 
@@ -49,9 +53,6 @@ $input-focus-border-color: $primary !default;
 $input-placeholder-color: #888 !default;
 
 
-/*$input-border-radius: 2px 2px 0 0 !default;
-$input-border-radius-sm: 2px 2px 0 0 !default;
-$input-border-radius-lg: 3px 3px 0 0 !default;*/
 
 $input-disabled-bg: lighten($input-bg, 4) !default;
 
@@ -59,7 +60,7 @@ $focus-ring-width: 0 !default;
 
 
 $form-range-thumb-focus-box-shadow: 0 0 0 1px darken($primary, 5) !default; // none !default; //0 0 0 1px $body-bg, $input-focus-box-shadow !default;
-/*$form-range-thumb-focus-box-shadow-width: 0 !default; //$input-focus-width !default; // For focus box shadow issue in Edge*/
+
 /* buttons */
 $btn-box-shadow: none !default;
 
@@ -69,3 +70,12 @@ $form-floating-label-transform: scale(.85) translateY(-.8rem) translateX(.15rem)
 
 /* tables */
 $table-striped-bg-factor: .03 !default;
+
+
+$body-bg-dark: #1b2838 !default;
+$body-color-dark: #c6d4df !default;
+
+$body-secondary-bg-dark: desaturate(lighten($body-bg-dark, 5), 15) !default;
+$body-tertiary-bg-dark: lighten($body-bg-dark, 10) !default;
+
+$form-switch-color-dark: #444;

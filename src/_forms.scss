@@ -22,8 +22,9 @@
     border-color: var(--bs-form-invalid-color);
 }
 
+
 /* input type=color fixes */
-input[type="color"].form-control {
+/*input[type="color"].form-control {
     padding: .3rem .5rem
 }
 
@@ -32,10 +33,10 @@ input[type="color"]:not(.form-control) {
     border: none;
     display: block;
     height: 1.8rem;
-}
+}*/
 
 /* custom label styles */
-label {
+/*label {
     font-size: 0.7em;
     text-transform: uppercase;
     margin-bottom: 0;
@@ -66,9 +67,9 @@ label.form-check-label {
     background-color: transparent;
 }
 
-
+*/
 /* form-select fixes */
-.form-select {
+/*.form-select {
     -moz-padding-start: $input-padding-x;
 
     optgroup {
@@ -131,4 +132,4 @@ label.form-check, label.form-check-inline {
     &:focus[readonly] {
         border-color: darken($input-border-color, 15);
     }
-}
+}*/

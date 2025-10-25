@@ -2,15 +2,20 @@
 ///<reference path="twr-variables-dark.scss" />
 ///<reference path="../node_modules/bootstrap/scss/variables.scss" />
 
+$input-border-color-dark: lighten($body-bg-dark, 10);
+$input-bg-dark: lighten($body-bg-dark, 3);
+
 @include color-mode(dark) {
+
+    kbd {
+        color: #c6d4df;
+        background-color: #000;
+    }
+
     strong, .font-weight-bold {
         color: white;
     }
 
-    kbd {
-        color: $body-color-dark;
-        background-color: black;
-    }
 
     .form-control, .form-select {
         background-color: $input-bg-dark;
@@ -46,6 +51,11 @@
         background: darken($body-bg-dark, 3);
     }
 
+    .input-group-text {
+        border-color: $input-border-color-dark;
+    }
+    /*
+
     .input-group > .form-control, .input-group > .form-select {
         border-right-color: $input-border-color-dark;
         border-left-color: $input-border-color-dark;
@@ -71,4 +81,5 @@
     .blockquote-footer {
         color: $text-muted;
     }
+*/
 }

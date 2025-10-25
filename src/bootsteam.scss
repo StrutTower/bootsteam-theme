@@ -13,13 +13,12 @@ $gray-200: lighten($gray-300, 10) !default;
 $gray-100: lighten($gray-200, 10) !default;
 
 @import "_twr-variables.scss";
-@import "_twr-variables-dark.scss";
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 @import "_darkThemeOverrides.scss";
+@import "_alerts.scss";
 @import "_forms.scss";
 @import "_fieldset.scss";
 @import "_tables.scss";
-@import "_alerts.scss";
 @import "plugins/_allPlugins.scss";

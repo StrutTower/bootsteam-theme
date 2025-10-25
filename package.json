@@ -1,9 +1,9 @@
 {
-  "version": "5.3.0",
+  "version": "5.3.1",
   "name": "bootsteam-theme",
   "private": false,
   "dependencies": {
-    "bootstrap": "5.3.2"
+    "bootstrap": "5.3.8"
   },
   "devDependencies": {
     "gulp": "4.0.2",

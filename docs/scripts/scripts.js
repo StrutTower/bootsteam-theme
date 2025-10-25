@@ -35,12 +35,6 @@
         $('#summernote-test').summernote();
     }
 
-    if ($.fn.select2) {
-        $('.select2-test').select2({
-            width: '100%'
-        });
-    }
-
     if (window.matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
         $('#not-supported-warning').show();
     }
